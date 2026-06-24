@@ -187,8 +187,8 @@ html {
 }
 .tl-dot {
   position: absolute;
-  left: -4px;
-  top: 6px;
+  left: -12px;
+  top: 10px;
   width: 9px;
   height: 9px;
   border-radius: 50%;

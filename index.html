@@ -15,59 +15,27 @@
     <!-- ══════════════ NAVBAR ══════════════ -->
     <header
       id="navbar"
-      style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-        border-bottom: 1px solid transparent;
-        transition:
-          background 0.3s,
-          border-color 0.3s;
-      "
+      class="fixed top-0 left-0 right-0 z-50 border-b border-transparent transition-[background,border-color] duration-300"
     >
       <div
-        style="
-          max-width: 1100px;
-          margin: 0 auto;
-          padding: 0 24px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        "
+        class="max-w-275 mx-auto px-6 h-15 flex items-center justify-between"
       >
         <a
           href="#"
-          class="font-display"
-          style="font-weight: 700; font-size: 1.1rem; letter-spacing: -0.03em"
+          class="font-display font-bold text-[1.1rem] tracking-[-0.03em]"
         >
-          &lt;<span class="text-violet">dev</span> /&gt;
+          &lt;<span class="text-violet">Gabriel</span> /&gt;
         </a>
-        <nav style="display: flex; gap: 28px; align-items: center">
+        <nav class="flex gap-7 items-center">
           <a href="#sobre" class="nav-link hidden sm:block">Sobre</a>
           <a href="#skills" class="nav-link hidden sm:block">Skills</a>
           <a href="#projetos" class="nav-link hidden sm:block">Projetos</a>
-          <a href="#experiencia" class="nav-link hidden sm:block"
-            >Experiência</a
-          >
+          <a href="#experiencia" class="nav-link hidden sm:block">
+            Experiência
+          </a>
           <a
             href="#contato"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 8px;
-              padding: 8px 18px;
-              border-radius: 8px;
-              background: var(--violet);
-              color: #fff;
-              font-size: 0.85rem;
-              font-weight: 600;
-              transition: background 0.2s;
-            "
-            onmouseover="this.style.background = '#6D28D9'"
-            onmouseout="this.style.background = 'var(--violet)'"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-(--violet) hover:bg-[#6D28D9] text-white text-sm font-semibold transition-[background] duration-200"
           >
             Contato
           </a>
@@ -77,108 +45,44 @@
 
     <!-- ══════════════ HERO ══════════════ -->
     <section
-      class="grid-bg"
-      style="
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        padding: 100px 24px 60px;
-        position: relative;
-        overflow: hidden;
-      "
+      class="grid-bg min-h-screen flex items-center px-6 py-25 pb-15 relative overflow-hidden"
     >
       <!-- blobs -->
       <div
-        class="blob"
-        style="
-          width: 500px;
-          height: 500px;
-          background: rgba(124, 58, 237, 0.12);
-          top: -80px;
-          left: -120px;
-        "
+        class="blob w-125 h-125 bg-[rgba(124,58,237,0.12)] -top-20 -left-30"
       ></div>
       <div
-        class="blob"
-        style="
-          width: 300px;
-          height: 300px;
-          background: rgba(96, 165, 250, 0.07);
-          bottom: 60px;
-          right: 0;
-        "
+        class="blob w-75 h-75 bg-[rgba(96,165,250,0.07)] bottom-15 right-0"
       ></div>
 
       <div
-        style="
-          max-width: 1100px;
-          margin: 0 auto;
-          width: 100%;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 64px;
-          align-items: center;
-        "
+        class="max-w-275 mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
       >
         <!-- left: copy -->
         <div>
           <span
-            class="font-mono"
-            style="
-              font-size: 0.78rem;
-              color: var(--violet-l);
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
+            class="font-mono text-[0.78rem] text-(--violet-l) tracking-[0.08em] uppercase"
             >Engenheiro de Software · Frontend</span
           >
 
           <h1
-            class="font-display"
-            style="
-              font-size: clamp(2.4rem, 5vw, 3.6rem);
-              font-weight: 700;
-              line-height: 1.08;
-              letter-spacing: -0.04em;
-              margin: 16px 0 24px;
-            "
+            class="font-display text-[clamp(2.4rem,5vw,3.6rem)] font-bold leading-[1.08] tracking-[-0.04em] my-4 mb-6"
           >
             Olá, sou<br />
             <span class="grad">Gabriel Braga</span><br />
             aqui.
           </h1>
 
-          <p
-            style="
-              color: var(--muted);
-              font-size: 1.05rem;
-              line-height: 1.7;
-              max-width: 400px;
-              margin-bottom: 36px;
-            "
-          >
+          <p class="text-[1.05rem] leading-[1.7] max-w-100 mb-9 text-(--muted)">
             Transformo requisitos complexos em interfaces que as pessoas adoram
             usar. Foco em React, Angular e TypeScript — com um olho sempre no
             detalhe e outro na performance.
           </p>
 
-          <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <div class="flex gap-3 flex-wrap">
             <a
               href="#projetos"
-              style="
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                padding: 12px 24px;
-                border-radius: 10px;
-                background: var(--violet);
-                color: #fff;
-                font-weight: 600;
-                font-size: 0.9rem;
-                transition: background 0.2s;
-              "
-              onmouseover="this.style.background = '#6D28D9'"
-              onmouseout="this.style.background = 'var(--violet)'"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-(--violet) hover:bg-[#6D28D9] text-white font-semibold text-sm transition-[background] duration-200"
             >
               Ver projetos
               <svg
@@ -199,20 +103,7 @@
             <a
               href="https://github.com/gab-braga"
               target="_blank"
-              style="
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                padding: 12px 24px;
-                border-radius: 10px;
-                border: 1px solid var(--border);
-                color: var(--text);
-                font-weight: 500;
-                font-size: 0.9rem;
-                transition: border-color 0.2s;
-              "
-              onmouseover="this.style.borderColor = 'rgba(124,58,237,0.5)'"
-              onmouseout="this.style.borderColor = 'var(--border)'"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-sm transition-[border-color] duration-200"
             >
               <svg
                 width="16"
@@ -229,20 +120,7 @@
             <a
               href="https://linkedin.com/in/f-gabriel-braga"
               target="_blank"
-              style="
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                padding: 12px 24px;
-                border-radius: 10px;
-                border: 1px solid var(--border);
-                color: var(--text);
-                font-weight: 500;
-                font-size: 0.9rem;
-                transition: border-color 0.2s;
-              "
-              onmouseover="this.style.borderColor = 'rgba(124,58,237,0.5)'"
-              onmouseout="this.style.borderColor = 'var(--border)'"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-sm transition-[border-color] duration-200"
             >
               <svg
                 width="16"
@@ -260,114 +138,54 @@
         </div>
 
         <!-- right: terminal animado -->
-        <div style="position: relative">
-          <div class="terminal" style="font-size: 0.8rem">
+        <div class="relative">
+          <div class="terminal text-xs">
             <div class="terminal-bar">
-              <div class="dot" style="background: #ff5f57"></div>
-              <div class="dot" style="background: #febc2e"></div>
-              <div class="dot" style="background: #28c840"></div>
-              <span
-                class="font-mono"
-                style="
-                  margin-left: 8px;
-                  font-size: 0.72rem;
-                  color: var(--muted);
-                "
-                >portfolio.tsx</span
-              >
+              <div class="dot bg-[#ff5f57]"></div>
+              <div class="dot bg-[#febc2e]"></div>
+              <div class="dot bg-[#28c840]"></div>
+              <span class="font-mono ml-2 text-[0.72rem] text-(--muted)">
+                portfolio.tsx
+              </span>
             </div>
             <div
               id="code-output"
-              class="font-mono"
-              style="padding: 20px 24px; line-height: 1.8; min-height: 260px"
+              class="font-mono p-5 px-6 leading-[1.8] min-h-65"
             ></div>
           </div>
+
           <!-- badge flutuante -->
           <!-- <div
-            style="
-              position: absolute;
-              bottom: -18px;
-              right: 24px;
-              background: var(--card);
-              border: 1px solid var(--border);
-              border-radius: 10px;
-              padding: 10px 16px;
-              display: flex;
-              align-items: center;
-              gap: 10px;
-            "
+            class="absolute bottom-4.5 right-6 bg-(--card) border border-(--border) rounded-xl px-4 py-2.5 flex items-center gap-2.5"
           >
             <div
-              style="
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background: #22c55e;
-                box-shadow: 0 0 6px #22c55e;
-              "
+              class="w-2 h-2 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e]"
             ></div>
-            <span
-              class="font-mono"
-              style="font-size: 0.75rem; color: var(--text)"
-              >Aberto a oportunidades</span
-            >
+            <span class="font-mono text-xs text-(--text)">
+              Aberto a oportunidades
+            </span>
           </div> -->
         </div>
       </div>
     </section>
 
     <!-- ══════════════ SOBRE ══════════════ -->
-    <section id="sobre" style="padding: 100px 24px">
-      <div style="max-width: 1100px; margin: 0 auto">
-        <div
-          class="reveal"
-          style="
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-          "
-        >
+    <section id="sobre" class="py-25 px-6">
+      <div class="max-w-275 mx-auto">
+        <div class="reveal grid grid-cols-1 md:grid-cols-2 items-center gap-20">
           <!-- avatar placeholder com stats -->
-          <div style="display: flex; flex-direction: column; gap: 16px">
+          <div
+            class="w-full max-w-110 sm:max-w-none md:max-w-90 flex flex-col sm:flex-row md:flex-col gap-4 max-sm:mx-auto"
+          >
             <div
-              style="
-                aspect-ratio: 1;
-                max-width: 360px;
-                border-radius: 20px;
-                background: var(--card);
-                border: 1px solid var(--border);
-                overflow: hidden;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
+              class="aspect-square w-full sm:max-w-80 md:max-w-90 rounded-2xl bg-(--card) border border-(--border) overflow-hidden relative flex items-center justify-center"
             >
               <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    135deg,
-                    rgba(124, 58, 237, 0.15) 0%,
-                    rgba(96, 165, 250, 0.08) 100%
-                  );
-                "
+                class="absolute inset-0 bg-[linear-gradient(135deg,rgba(124,58,237,0.15)_0%,rgba(96,165,250,0.08)_100%)]"
               ></div>
-              <div style="position: relative; text-align: center">
+              <div class="relative text-center">
                 <div
-                  style="
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                    background: rgba(124, 58, 237, 0.2);
-                    border: 2px solid rgba(124, 58, 237, 0.4);
-                    margin: 0 auto 12px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
+                  class="w-20 h-20 rounded-full bg-[rgba(124,58,237,0.2)] border-2 border-[rgba(124,58,237,0.4)] mx-auto mb-3 flex items-center justify-center"
                 >
                   <svg
                     width="36"
@@ -384,120 +202,43 @@
                     />
                   </svg>
                 </div>
-                <p
-                  class="font-mono"
-                  style="font-size: 0.75rem; color: var(--muted)"
-                >
+                <p class="font-mono text-xs text-(--muted)">
                   <!-- // sua foto aqui -->
                 </p>
               </div>
             </div>
+
             <!-- mini stats -->
-            <div
-              style="
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
-                max-width: 360px;
-              "
-            >
+            <div class="w-full grid grid-cols-2 gap-3">
               <div
-                class="card-hover"
-                style="
-                  border-radius: 12px;
-                  padding: 16px;
-                  background: var(--card);
-                  text-align: center;
-                "
+                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div
-                  class="font-display grad"
-                  style="font-size: 1.8rem; font-weight: 700"
-                >
-                  +5
-                </div>
-                <div
-                  style="
-                    font-size: 0.78rem;
-                    color: var(--muted);
-                    margin-top: 2px;
-                  "
-                >
+                <div class="font-display grad text-[1.8rem] font-bold">+5</div>
+                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
                   anos de exp.
                 </div>
               </div>
               <div
-                class="card-hover"
-                style="
-                  border-radius: 12px;
-                  padding: 16px;
-                  background: var(--card);
-                  text-align: center;
-                "
+                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div
-                  class="font-display grad"
-                  style="font-size: 1.8rem; font-weight: 700"
-                >
-                  +30
-                </div>
-                <div
-                  style="
-                    font-size: 0.78rem;
-                    color: var(--muted);
-                    margin-top: 2px;
-                  "
-                >
+                <div class="font-display grad text-[1.8rem] font-bold">+30</div>
+                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
                   projetos
                 </div>
               </div>
               <div
-                class="card-hover"
-                style="
-                  border-radius: 12px;
-                  padding: 16px;
-                  background: var(--card);
-                  text-align: center;
-                "
+                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div
-                  class="font-display grad"
-                  style="font-size: 1.8rem; font-weight: 700"
-                >
-                  3
-                </div>
-                <div
-                  style="
-                    font-size: 0.78rem;
-                    color: var(--muted);
-                    margin-top: 2px;
-                  "
-                >
+                <div class="font-display grad text-[1.8rem] font-bold">3</div>
+                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
                   stacks principais
                 </div>
               </div>
               <div
-                class="card-hover"
-                style="
-                  border-radius: 12px;
-                  padding: 16px;
-                  background: var(--card);
-                  text-align: center;
-                "
+                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div
-                  class="font-display grad"
-                  style="font-size: 1.8rem; font-weight: 700"
-                >
-                  ∞
-                </div>
-                <div
-                  style="
-                    font-size: 0.78rem;
-                    color: var(--muted);
-                    margin-top: 2px;
-                  "
-                >
+                <div class="font-display grad text-[1.8rem] font-bold">∞</div>
+                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
                   café por dia
                 </div>
               </div>
@@ -507,55 +248,29 @@
           <!-- texto -->
           <div>
             <p
-              class="font-mono"
-              style="
-                font-size: 0.75rem;
-                color: var(--violet-l);
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                margin-bottom: 12px;
-              "
+              class="font-mono text-xs text-(--violet-l) tracking-[0.08em] uppercase mb-3"
             >
               // sobre mim
             </p>
             <h2
-              class="font-display"
-              style="
-                font-size: 2.2rem;
-                font-weight: 700;
-                letter-spacing: -0.03em;
-                line-height: 1.15;
-                margin-bottom: 20px;
-              "
+              class="font-display text-[2.2rem] font-bold leading-[1.15] tracking-[-0.03em] mb-5"
             >
               Código limpo.<br />Interfaces que<span class="grad">
                 funcionam</span
               >.
             </h2>
-            <p
-              style="
-                color: var(--muted);
-                line-height: 1.75;
-                margin-bottom: 16px;
-              "
-            >
+            <p class="text-(--muted) leading-[1.75] mb-4">
               Sou engenheiro de software especializado em Frontend, com foco em
               criar experiências digitais rápidas, acessíveis e bem
               estruturadas. Trabalho com React/Next.js e Angular no dia a dia,
               sempre com TypeScript como base.
             </p>
-            <p
-              style="
-                color: var(--muted);
-                line-height: 1.75;
-                margin-bottom: 28px;
-              "
-            >
+            <p class="text-(--muted) leading-[1.75] mb-7">
               Me importo com os detalhes que a maioria ignora: performance de
               renderização, acessibilidade real, design systems escaláveis e
               código que o próximo dev vai agradecer em ler.
             </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <div class="flex flex-wrap gap-2">
               <span class="pill">#clean-code</span>
               <span class="pill">#performance</span>
               <span class="pill">#a11y</span>
@@ -568,57 +283,24 @@
     </section>
 
     <!-- ══════════════ SKILLS ══════════════ -->
-    <section
-      id="skills"
-      style="padding: 80px 24px; border-top: 1px solid var(--border)"
-    >
-      <div style="max-width: 1100px; margin: 0 auto">
-        <div class="reveal" style="text-align: center; margin-bottom: 56px">
+    <section id="skills" class="py-20 px-6 border-t border-(--border)">
+      <div class="max-w-275 mx-auto">
+        <div class="reveal text-center mb-14">
           <p
-            class="font-mono"
-            style="
-              font-size: 0.75rem;
-              color: var(--violet-l);
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-              margin-bottom: 10px;
-            "
+            class="font-mono text-xs text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
           >
             // stack
           </p>
-          <h2
-            class="font-display"
-            style="font-size: 2rem; font-weight: 700; letter-spacing: -0.03em"
-          >
+          <h2 class="font-display text-[2rem] font-bold tracking-[-0.03em]">
             Tecnologias que uso
           </h2>
         </div>
 
-        <div
-          class="reveal"
-          style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-          "
-        >
+        <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-5">
           <!-- React / Next -->
-          <div
-            class="card-hover"
-            style="border-radius: 16px; padding: 28px; background: var(--card)"
-          >
+          <div class="card-hover rounded-2xl p-7 bg-(--card)">
             <div
-              style="
-                width: 44px;
-                height: 44px;
-                border-radius: 12px;
-                background: rgba(97, 218, 251, 0.1);
-                border: 1px solid rgba(97, 218, 251, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
+              class="w-11 h-11 rounded-xl bg-[rgba(97,218,251,0.1)] border border-[rgba(97,218,251,0.2)] flex items-center justify-center mb-4"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="#61DAFB">
                 <circle cx="12" cy="12" r="2.5" />
@@ -653,45 +335,25 @@
                 />
               </svg>
             </div>
-            <h3
-              class="font-display"
-              style="font-weight: 600; font-size: 1rem; margin-bottom: 8px"
-            >
+            <h3 class="font-display font-semibold text-base mb-2">
               React & Next.js
             </h3>
-            <p
-              style="color: var(--muted); font-size: 0.83rem; line-height: 1.65"
-            >
+            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
               Componentes, hooks customizados, SSR/SSG, App Router, Server
               Components e otimização de bundle.
             </p>
-            <div
-              style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px"
-            >
-              <span class="pill" style="font-size: 0.7rem">hooks</span>
-              <span class="pill" style="font-size: 0.7rem">context</span>
-              <span class="pill" style="font-size: 0.7rem">SSR</span>
-              <span class="pill" style="font-size: 0.7rem">RSC</span>
+            <div class="mt-3.5 flex flex-wrap gap-1.5">
+              <span class="pill text-xs">hooks</span>
+              <span class="pill text-xs">context</span>
+              <span class="pill text-xs">SSR</span>
+              <span class="pill text-xs">RSC</span>
             </div>
           </div>
 
           <!-- Angular -->
-          <div
-            class="card-hover"
-            style="border-radius: 16px; padding: 28px; background: var(--card)"
-          >
+          <div class="card-hover rounded-2xl p-7 bg-(--card)">
             <div
-              style="
-                width: 44px;
-                height: 44px;
-                border-radius: 12px;
-                background: rgba(221, 0, 49, 0.1);
-                border: 1px solid rgba(221, 0, 49, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
+              class="w-11 h-11 rounded-xl bg-[rgba(221,0,49,0.1)] border border-[rgba(221,0,49,0.2)] flex items-center justify-center mb-4"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="#DD0031">
                 <path
@@ -706,105 +368,58 @@
                 />
               </svg>
             </div>
-            <h3
-              class="font-display"
-              style="font-weight: 600; font-size: 1rem; margin-bottom: 8px"
-            >
-              Angular
-            </h3>
-            <p
-              style="color: var(--muted); font-size: 0.83rem; line-height: 1.65"
-            >
+            <h3 class="font-display font-semibold text-base mb-2">Angular</h3>
+            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
               Arquitetura modular, RxJS, signals, lazy loading e construção de
               SPAs de larga escala.
             </p>
-            <div
-              style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px"
-            >
-              <span class="pill" style="font-size: 0.7rem">RxJS</span>
-              <span class="pill" style="font-size: 0.7rem">signals</span>
-              <span class="pill" style="font-size: 0.7rem">DI</span>
-              <span class="pill" style="font-size: 0.7rem">standalone</span>
+            <div class="mt-3.5 flex flex-wrap gap-1.5">
+              <span class="pill text-xs">RxJS</span>
+              <span class="pill text-xs">signals</span>
+              <span class="pill text-xs">DI</span>
+              <span class="pill text-xs">standalone</span>
             </div>
           </div>
 
           <!-- TypeScript / Node -->
-          <div
-            class="card-hover"
-            style="border-radius: 16px; padding: 28px; background: var(--card)"
-          >
+          <div class="card-hover rounded-2xl p-7 bg-(--card)">
             <div
-              style="
-                width: 44px;
-                height: 44px;
-                border-radius: 12px;
-                background: rgba(49, 120, 198, 0.1);
-                border: 1px solid rgba(49, 120, 198, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
+              class="w-11 h-11 rounded-xl bg-[rgba(49,120,198,0.1)] border border-[rgba(49,120,198,0.2)] flex items-center justify-center mb-4"
             >
-              <svg width="22" height="22" viewBox="0 0 400 400" fill="none">
-                <rect width="400" height="400" rx="50" fill="#3178C6" />
-                <path
-                  d="M87.7 242l-.1 10.2c0 .7.1 1.5.3 2.2.2.7.5 1.4.9 2 .4.6.9 1.1 1.5 1.5.6.4 1.3.7 2 .8l83.1 14.8v-13.6l-71.7-12.7v-.1l71.7-12.7V221l-83.1 14.8c-.7.1-1.4.4-2 .8-.6.4-1.1.9-1.5 1.5-.4.6-.7 1.3-.9 2-.2.7-.3 1.5-.3 2.2v-.3z"
-                  fill="white"
-                />
-                <path
-                  d="M312.3 242v-.3c0-.7-.1-1.5-.3-2.2-.2-.7-.5-1.4-.9-2-.4-.6-.9-1.1-1.5-1.5-.6-.4-1.3-.7-2-.8L224.5 221v13.4l71.7 12.7v.1l-71.7 12.7v13.6l83.1-14.8c.7-.1 1.4-.4 2-.8.6-.4 1.1-.9 1.5-1.5.4-.6.7-1.3.9-2 .2-.7.3-1.5.3-2.2V242z"
-                  fill="white"
-                />
-                <path d="M241 130h-27.5v140H241V130z" fill="white" />
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="#3178C6">
+                <g clip-path="url(#clip0_1793_1804)">
+                  <path
+                    d="M0 11V22H22V0H0V11ZM17.7293 10.1237C18.2884 10.263 18.7137 10.5114 19.1052 10.9166C19.3077 11.1329 19.6084 11.5271 19.6323 11.6224C19.6396 11.6499 18.6826 12.2916 18.1033 12.6518C18.0822 12.6656 17.9978 12.5748 17.9043 12.4355C17.6202 12.023 17.3241 11.8452 16.8703 11.814C16.203 11.7682 15.774 12.1174 15.7777 12.7004C15.7716 12.8438 15.8039 12.9862 15.8712 13.1129C16.0178 13.4163 16.291 13.5988 17.1453 13.9682C18.7211 14.6465 19.3948 15.0929 19.8138 15.7282C20.2813 16.4368 20.3867 17.5688 20.0686 18.4103C19.7203 19.3252 18.854 19.9467 17.6348 20.152C17.2581 20.2189 16.3643 20.2088 15.9592 20.1355C15.0755 19.9778 14.2377 19.5415 13.7207 18.9686C13.5181 18.7458 13.123 18.1619 13.1478 18.1207C13.1578 18.106 13.2486 18.0501 13.3494 17.9914C13.4484 17.9355 13.8178 17.7219 14.1671 17.5193L14.7996 17.1527L14.9325 17.3488C15.1177 17.6312 15.5219 18.0189 15.7667 18.1482C16.4688 18.5185 17.4323 18.4663 17.9071 18.04C18.0026 17.9596 18.0782 17.8581 18.1279 17.7436C18.1777 17.6291 18.2003 17.5047 18.194 17.38C18.194 17.1252 18.1619 17.0133 18.029 16.8208C17.8585 16.577 17.5092 16.3717 16.5174 15.9408C15.3826 15.4522 14.894 15.1488 14.4467 14.6667C14.1675 14.3485 13.9613 13.973 13.8426 13.5667C13.7592 13.2559 13.7381 12.4768 13.8041 12.1633C14.0378 11.066 14.8656 10.3024 16.06 10.0751C16.4478 10.0018 17.3488 10.0292 17.7293 10.1237ZM12.5648 11.0422L12.5721 11.9433H9.7075V20.0796H7.68167V11.9433H4.81983V11.0596C4.81983 10.5701 4.82992 10.1613 4.84367 10.1521C4.85467 10.1374 6.59725 10.1301 8.70925 10.1338L12.5547 10.1448L12.5648 11.0422Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1793_1804">
+                    <rect width="22" height="22" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
             </div>
-            <h3
-              class="font-display"
-              style="font-weight: 600; font-size: 1rem; margin-bottom: 8px"
-            >
+            <h3 class="font-display font-semibold text-base mb-2">
               TypeScript & Node.js
             </h3>
-            <p
-              style="color: var(--muted); font-size: 0.83rem; line-height: 1.65"
-            >
+            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
               Tipagem estrita, generics, utilitários avançados e APIs
               REST/GraphQL no backend quando necessário.
             </p>
-            <div
-              style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px"
-            >
-              <span class="pill" style="font-size: 0.7rem">generics</span>
-              <span class="pill" style="font-size: 0.7rem">decorators</span>
-              <span class="pill" style="font-size: 0.7rem">REST</span>
-              <span class="pill" style="font-size: 0.7rem">GraphQL</span>
+            <div class="mt-3.5 flex flex-wrap gap-1.5">
+              <span class="pill text-xs">generics</span>
+              <span class="pill text-xs">decorators</span>
+              <span class="pill text-xs">REST</span>
+              <span class="pill text-xs">GraphQL</span>
             </div>
           </div>
 
           <!-- linha 2 -->
           <div
-            class="card-hover"
-            style="
-              border-radius: 16px;
-              padding: 24px;
-              background: var(--card);
-              display: flex;
-              align-items: center;
-              gap: 16px;
-            "
+            class="card-hover rounded-2xl p-6 bg-(--card) flex items-center gap-4"
           >
             <div
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 10px;
-                background: rgba(56, 189, 248, 0.1);
-                border: 1px solid rgba(56, 189, 248, 0.2);
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
+              class="w-10 h-10 rounded-lg bg-[rgba(56,189,248,0.1)] border border-[rgba(56,189,248,0.2)] shrink-0 flex items-center justify-center"
             >
               <svg width="22" height="22" viewBox="0 0 54 33" fill="none">
                 <path
@@ -816,114 +431,81 @@
               </svg>
             </div>
             <div>
-              <div
-                class="font-display"
-                style="font-weight: 600; font-size: 0.95rem"
-              >
+              <div class="font-display font-semibold text-[0.95rem]">
                 Tailwind CSS
               </div>
-              <div
-                style="color: var(--muted); font-size: 0.78rem; margin-top: 2px"
-              >
+              <div class="text-[0.78rem] text-(--muted) mt-0.5">
                 Design systems, tokens, responsivo
               </div>
             </div>
           </div>
 
           <div
-            class="card-hover"
-            style="
-              border-radius: 16px;
-              padding: 24px;
-              background: var(--card);
-              display: flex;
-              align-items: center;
-              gap: 16px;
-            "
+            class="card-hover rounded-2xl p-6 bg-(--card) flex items-center gap-4"
           >
             <div
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 10px;
-                background: rgba(249, 115, 22, 0.1);
-                border: 1px solid rgba(249, 115, 22, 0.2);
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
+              class="w-10 h-10 rounded-lg bg-[rgba(120,22,249,0.1)] border border-[rgba(103,14,219,0.2)] shrink-0 flex items-center justify-center"
             >
-              <svg width="22" height="22" viewBox="0 0 256 257" fill="none">
-                <path
-                  d="M255.153 57.187L134.897 252.164a11.324 11.324 0 01-19.263.001L.851 57.187A11.32 11.32 0 0110.592 40h234.818a11.32 11.32 0 019.743 17.187z"
-                  fill="#FF3E00"
-                />
-                <path
-                  d="M182.022 40H233.4l-105 167.864L23.575 40h56.056l48.37 77.332L182.022 40z"
-                  fill="#FF3E00"
-                />
-                <path
-                  d="M128 217.864L79.63 140.5 128 63.136l48.37 77.364L128 217.864z"
-                  fill="white"
-                />
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <g clip-path="url(#clip0_1794_1811)">
+                  <path
+                    d="M21.4731 0.171875H7.01367V7.42173H14.1284C14.3819 7.42173 14.5875 7.62736 14.5875 7.88083V14.8974H21.9322V0.63181C21.9324 0.509905 21.8842 0.392917 21.798 0.306638C21.7119 0.220359 21.595 0.171875 21.4731 0.171875Z"
+                    fill="#8E75FF"
+                  />
+                  <path
+                    opacity="0.405"
+                    d="M7.01278 0.171875V7.42173H0.229567C0.136356 7.42157 0.0524646 7.36515 0.0171505 7.27889C-0.0181636 7.19263 0.00208546 7.09358 0.0684217 7.0281L7.01278 0.171875ZM14.9786 21.7611C14.9125 21.826 14.814 21.845 14.7286 21.8092C14.6432 21.7735 14.5876 21.69 14.5874 21.5975V14.8974H21.9321L14.9786 21.7603V21.7611Z"
+                    fill="#8E75FF"
+                  />
+                  <path
+                    opacity="0.405"
+                    d="M7.0127 7.42188H14.3582C14.4841 7.42188 14.5874 7.52427 14.5874 7.651V14.8975H7.47263C7.21908 14.8975 7.01353 14.692 7.01353 14.4384V7.42188H7.0127Z"
+                    fill="#8E75FF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1794_1811">
+                    <rect width="22" height="22" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
             </div>
             <div>
-              <div
-                class="font-display"
-                style="font-weight: 600; font-size: 0.95rem"
-              >
-                Svelte / Vue
+              <div class="font-display font-semibold text-[0.95rem]">
+                Strapi
               </div>
-              <div
-                style="color: var(--muted); font-size: 0.78rem; margin-top: 2px"
-              >
-                Familiaridade com outros frameworks
+              <div class="text-[0.78rem] text-(--muted) mt-0.5">
+                CMS headless, APIs, modelagem de conteúdo
               </div>
             </div>
           </div>
 
           <div
-            class="card-hover"
-            style="
-              border-radius: 16px;
-              padding: 24px;
-              background: var(--card);
-              display: flex;
-              align-items: center;
-              gap: 16px;
-            "
+            class="card-hover rounded-2xl p-6 bg-(--card) flex items-center gap-4"
           >
             <div
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 10px;
-                background: rgba(251, 191, 36, 0.1);
-                border: 1px solid rgba(251, 191, 36, 0.2);
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
+              class="w-10 h-10 rounded-lg bg-[rgba(251,191,36,0.1)] border border-[rgba(251,191,36,0.2)] shrink-0 flex items-center justify-center"
             >
-              <svg width="22" height="22" viewBox="0 0 128 128" fill="#F0DB4F">
-                <path
-                  d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.postgrado35l2.459-5.574c3.401 2.507 9.731 3.431 13.028.807 1.6-1.33 2.307-3.186 2.307-6.938V58.792h7.186v48.721zm32.72 6.435c-4.083.879-8.499-.13-11.501-2.679l2.532-5.396c2.99 2.418 8.1 3.057 10.523.757 1.478-1.346 1.92-3.186 1.624-5.284-.604-4.439-5.515-5.724-9.586-7.586-6.015-2.685-9.258-7.032-8.528-13.451.448-3.951 2.547-6.999 5.735-8.71 3.188-1.712 7.466-1.823 11.068-.254l-1.439 5.599c-2.951-1.407-6.04-1.127-8.023.274-1.659 1.177-2.405 3.051-2.174 5.483.46 4.564 5.491 5.724 9.721 7.512 5.762 2.516 8.704 6.677 7.812 12.94-.607 4.189-2.774 7.394-7.764 10.795z"
-                />
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="#F0DB4F">
+                <g clip-path="url(#clip0_1793_1799)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.8608 20.2753C14.9413 20.2753 13.7005 19.3602 13.0955 18.1634L14.7785 17.1886C15.2218 17.9124 15.7971 18.4438 16.8168 18.4438C17.6726 18.4438 18.2193 18.0156 18.2193 17.4249C18.2193 16.5361 17.0335 16.1888 16.1964 15.8302C14.7048 15.1955 13.7148 14.398 13.7148 12.7139C13.7148 11.164 14.8962 9.98271 16.7431 9.98271C18.0565 9.98271 19.0025 10.4402 19.6812 11.6359L18.0719 12.6699C17.7177 12.0352 17.3338 11.7842 16.7431 11.7842C16.137 11.7842 15.7531 12.1683 15.7531 12.6699C15.7531 13.2903 16.137 13.5412 17.0236 13.9251C18.8815 14.7215 20.2873 15.3472 20.2873 17.3954C20.2873 19.2566 18.8254 20.2753 16.8608 20.2753ZM12.1 17.159C12.1 19.3007 10.7811 20.4327 8.94958 20.4327C7.29519 20.4327 6.30409 19.8 5.81679 18.7H5.80031H5.79259H5.78819L7.47008 17.5243C7.79458 18.0996 8.0872 18.5077 8.7956 18.5077C9.4754 18.5077 9.9 18.1635 9.9 17.1306V9.9H12.1V17.159ZM0 22H22V0H0V22Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1793_1799">
+                    <rect width="22" height="22" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
             </div>
             <div>
-              <div
-                class="font-display"
-                style="font-weight: 600; font-size: 0.95rem"
-              >
+              <div class="font-display font-semibold text-[0.95rem]">
                 JavaScript ES2024+
               </div>
-              <div
-                style="color: var(--muted); font-size: 0.78rem; margin-top: 2px"
-              >
+              <div class="text-[0.78rem] text-(--muted) mt-0.5">
                 Async/await, modules, runtime APIs
               </div>
             </div>
@@ -933,183 +515,74 @@
     </section>
 
     <!-- ══════════════ PROJETOS ══════════════ -->
-    <section
-      id="projetos"
-      style="padding: 100px 24px; border-top: 1px solid var(--border)"
-    >
-      <div style="max-width: 1100px; margin: 0 auto">
+    <section id="projetos" class="py-25 px-6 border-t border-(--border)">
+      <div class="max-w-275 mx-auto">
         <div
-          class="reveal"
-          style="
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            margin-bottom: 48px;
-            flex-wrap: gap-12px;
-          "
+          class="reveal flex items-end justify-between mb-12 flex-wrap gap-3"
         >
           <div>
             <p
-              class="font-mono"
-              style="
-                font-size: 0.75rem;
-                color: var(--violet-l);
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                margin-bottom: 10px;
-              "
+              class="font-mono text-xs text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
             >
               // projetos
             </p>
-            <h2
-              class="font-display"
-              style="font-size: 2rem; font-weight: 700; letter-spacing: -0.03em"
-            >
+            <h2 class="font-display text-[2rem] font-bold tracking-[-0.03em]">
               O que eu construí
             </h2>
           </div>
           <a
             href="https://github.com/gab-braga"
             target="_blank"
-            style="
-              color: var(--muted);
-              font-size: 0.85rem;
-              font-weight: 500;
-              white-space: nowrap;
-              transition: color 0.2s;
-            "
-            onmouseover="this.style.color = 'var(--violet-l)'"
-            onmouseout="this.style.color = 'var(--muted)'"
+            class="text-[0.85rem] font-medium text-(--muted) hover:text-(--violet-l) whitespace-nowrap transition-colors"
             >Ver todos no GitHub →</a
           >
         </div>
 
         <div
-          class="reveal"
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
-          "
+          class="reveal grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-5"
         >
           <!-- projeto 1 -->
           <div
-            class="card-hover"
-            style="
-              border-radius: 16px;
-              background: var(--card);
-              overflow: hidden;
-              display: flex;
-              flex-direction: column;
-            "
+            class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
           >
             <div
-              style="
-                height: 160px;
-                background: linear-gradient(
-                  135deg,
-                  rgba(124, 58, 237, 0.25) 0%,
-                  rgba(96, 165, 250, 0.12) 100%
-                );
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-bottom: 1px solid var(--border);
-              "
+              class="h-40 bg-[linear-gradient(135deg,rgba(124,58,237,0.25)_0%,rgba(96,165,250,0.12)_100%)] flex items-center justify-center border-b border-(--border)"
             >
               <div
-                class="font-mono"
-                style="
-                  font-size: 0.8rem;
-                  color: rgba(167, 139, 250, 0.7);
-                  text-align: center;
-                  padding: 20px;
-                "
+                class="font-mono text-[0.8rem] text-[rgba(167,139,250,0.7)] text-center p-5"
               >
-                <div style="margin-bottom: 8px; color: var(--muted)">
-                  // preview do projeto
-                </div>
+                <div class="mb-2 text-(--muted)">// preview do projeto</div>
                 <div>&lt;App /&gt; renderizando...</div>
               </div>
             </div>
-            <div
-              style="
-                padding: 24px;
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 8px;
-                  margin-bottom: 10px;
-                "
-              >
-                <h3
-                  class="font-display"
-                  style="font-weight: 600; font-size: 1rem; flex: 1"
-                >
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2.5">
+                <h3 class="font-display font-semibold text-base flex-1">
                   Design System UI
                 </h3>
                 <span
-                  class="pill"
-                  style="
-                    font-size: 0.68rem;
-                    border-color: rgba(124, 58, 237, 0.3);
-                    color: var(--violet-l);
-                  "
+                  class="pill text-[0.68rem] border border-[rgba(124,58,237,0.3)] text-(--violet-l)"
                   >React</span
                 >
               </div>
-              <p
-                style="
-                  color: var(--muted);
-                  font-size: 0.83rem;
-                  line-height: 1.65;
-                  flex: 1;
-                "
-              >
+              <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
                 Biblioteca de componentes acessíveis e temáticos, com Storybook,
                 testes e documentação.
               </p>
-              <div
-                style="
-                  margin-top: 16px;
-                  display: flex;
-                  gap: 8px;
-                  flex-wrap: wrap;
-                "
-              >
-                <span class="pill" style="font-size: 0.68rem">TypeScript</span>
-                <span class="pill" style="font-size: 0.68rem">Storybook</span>
-                <span class="pill" style="font-size: 0.68rem">Jest</span>
+              <div class="mt-4 flex gap-2 flex-wrap">
+                <span class="pill text-xs">TypeScript</span>
+                <span class="pill text-xs">Storybook</span>
+                <span class="pill text-xs">Jest</span>
               </div>
-              <div style="margin-top: 16px; display: flex; gap: 12px">
+              <div class="mt-4 flex gap-3">
                 <a
                   href="#"
-                  style="
-                    font-size: 0.82rem;
-                    color: var(--violet-l);
-                    font-weight: 500;
-                    transition: opacity 0.2s;
-                  "
-                  onmouseover="this.style.opacity = '0.7'"
-                  onmouseout="this.style.opacity = '1'"
+                  class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
                   >GitHub ↗</a
                 >
                 <a
                   href="#"
-                  style="
-                    font-size: 0.82rem;
-                    color: var(--muted);
-                    font-weight: 500;
-                    transition: color 0.2s;
-                  "
-                  onmouseover="this.style.color = 'var(--text)'"
-                  onmouseout="this.style.color = 'var(--muted)'"
+                  class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
               </div>
@@ -1118,122 +591,46 @@
 
           <!-- projeto 2 -->
           <div
-            class="card-hover"
-            style="
-              border-radius: 16px;
-              background: var(--card);
-              overflow: hidden;
-              display: flex;
-              flex-direction: column;
-            "
+            class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
           >
             <div
-              style="
-                height: 160px;
-                background: linear-gradient(
-                  135deg,
-                  rgba(16, 185, 129, 0.18) 0%,
-                  rgba(96, 165, 250, 0.1) 100%
-                );
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-bottom: 1px solid var(--border);
-              "
+              class="h-40 bg-[linear-gradient(135deg,rgba(16,185,129,0.18)_0%,rgba(96,165,250,0.1)_100%)] flex items-center justify-center border-b border-(--border)"
             >
               <div
-                class="font-mono"
-                style="
-                  font-size: 0.8rem;
-                  color: rgba(110, 231, 183, 0.7);
-                  text-align: center;
-                  padding: 20px;
-                "
+                class="font-mono text-[0.8rem] text-[rgba(110,231,183,0.7)] text-center p-5"
               >
-                <div style="margin-bottom: 8px; color: var(--muted)">
-                  // preview do projeto
-                </div>
+                <div class="mb-2 text-(--muted)">// preview do projeto</div>
                 <div>ng serve --open</div>
               </div>
             </div>
-            <div
-              style="
-                padding: 24px;
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 8px;
-                  margin-bottom: 10px;
-                "
-              >
-                <h3
-                  class="font-display"
-                  style="font-weight: 600; font-size: 1rem; flex: 1"
-                >
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2.5">
+                <h3 class="font-display font-semibold text-base flex-1">
                   Dashboard Analytics
                 </h3>
                 <span
-                  class="pill"
-                  style="
-                    font-size: 0.68rem;
-                    border-color: rgba(221, 0, 49, 0.3);
-                    color: #fda4af;
-                  "
+                  class="pill text-[0.68rem] border border-[rgba(221,0,49,0.3)] text-[#fda4af]"
                   >Angular</span
                 >
               </div>
-              <p
-                style="
-                  color: var(--muted);
-                  font-size: 0.83rem;
-                  line-height: 1.65;
-                  flex: 1;
-                "
-              >
+              <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
                 Painel de métricas em tempo real com gráficos interativos,
                 filtros avançados e exportação de dados.
               </p>
-              <div
-                style="
-                  margin-top: 16px;
-                  display: flex;
-                  gap: 8px;
-                  flex-wrap: wrap;
-                "
-              >
-                <span class="pill" style="font-size: 0.68rem">RxJS</span>
-                <span class="pill" style="font-size: 0.68rem">NgRx</span>
-                <span class="pill" style="font-size: 0.68rem">Chart.js</span>
+              <div class="mt-4 flex gap-2 flex-wrap">
+                <span class="pill text-xs">RxJS</span>
+                <span class="pill text-xs">NgRx</span>
+                <span class="pill text-xs">Chart.js</span>
               </div>
-              <div style="margin-top: 16px; display: flex; gap: 12px">
+              <div class="mt-4 flex gap-3">
                 <a
                   href="#"
-                  style="
-                    font-size: 0.82rem;
-                    color: var(--violet-l);
-                    font-weight: 500;
-                    transition: opacity 0.2s;
-                  "
-                  onmouseover="this.style.opacity = '0.7'"
-                  onmouseout="this.style.opacity = '1'"
+                  class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
                   >GitHub ↗</a
                 >
                 <a
                   href="#"
-                  style="
-                    font-size: 0.82rem;
-                    color: var(--muted);
-                    font-weight: 500;
-                    transition: color 0.2s;
-                  "
-                  onmouseover="this.style.color = 'var(--text)'"
-                  onmouseout="this.style.color = 'var(--muted)'"
+                  class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
               </div>
@@ -1242,122 +639,46 @@
 
           <!-- projeto 3 -->
           <div
-            class="card-hover"
-            style="
-              border-radius: 16px;
-              background: var(--card);
-              overflow: hidden;
-              display: flex;
-              flex-direction: column;
-            "
+            class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
           >
             <div
-              style="
-                height: 160px;
-                background: linear-gradient(
-                  135deg,
-                  rgba(245, 158, 11, 0.15) 0%,
-                  rgba(124, 58, 237, 0.12) 100%
-                );
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-bottom: 1px solid var(--border);
-              "
+              class="h-40 bg-[linear-gradient(135deg,rgba(245,158,11,0.15)_0%,rgba(124,58,237,0.12)_100%)] flex items-center justify-center border-b border-(--border)"
             >
               <div
-                class="font-mono"
-                style="
-                  font-size: 0.8rem;
-                  color: rgba(253, 211, 100, 0.7);
-                  text-align: center;
-                  padding: 20px;
-                "
+                class="font-mono text-[0.8rem] text-[rgba(253,211,100,0.7)] text-center p-5"
               >
-                <div style="margin-bottom: 8px; color: var(--muted)">
-                  // preview do projeto
-                </div>
+                <div class="mb-2 text-(--muted)">// preview do projeto</div>
                 <div>next build ✓ 24 pages</div>
               </div>
             </div>
-            <div
-              style="
-                padding: 24px;
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 8px;
-                  margin-bottom: 10px;
-                "
-              >
-                <h3
-                  class="font-display"
-                  style="font-weight: 600; font-size: 1rem; flex: 1"
-                >
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2.5">
+                <h3 class="font-display font-semibold text-base flex-1">
                   E-commerce Next.js
                 </h3>
                 <span
-                  class="pill"
-                  style="
-                    font-size: 0.68rem;
-                    border-color: rgba(96, 165, 250, 0.3);
-                    color: #93c5fd;
-                  "
+                  class="pill text-[0.68rem] border border-[rgba(96,165,250,0.3)] text-[#93c5fd]"
                   >Next.js</span
                 >
               </div>
-              <p
-                style="
-                  color: var(--muted);
-                  font-size: 0.83rem;
-                  line-height: 1.65;
-                  flex: 1;
-                "
-              >
+              <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
                 Loja virtual com SSR, carrinho otimista, pagamento integrado e
                 score 100 no Lighthouse.
               </p>
-              <div
-                style="
-                  margin-top: 16px;
-                  display: flex;
-                  gap: 8px;
-                  flex-wrap: wrap;
-                "
-              >
-                <span class="pill" style="font-size: 0.68rem">App Router</span>
-                <span class="pill" style="font-size: 0.68rem">Stripe</span>
-                <span class="pill" style="font-size: 0.68rem">Prisma</span>
+              <div class="mt-4 flex gap-2 flex-wrap">
+                <span class="pill text-xs">App Router</span>
+                <span class="pill text-xs">Stripe</span>
+                <span class="pill text-xs">Prisma</span>
               </div>
-              <div style="margin-top: 16px; display: flex; gap: 12px">
+              <div class="mt-4 flex gap-3">
                 <a
                   href="#"
-                  style="
-                    font-size: 0.82rem;
-                    color: var(--violet-l);
-                    font-weight: 500;
-                    transition: opacity 0.2s;
-                  "
-                  onmouseover="this.style.opacity = '0.7'"
-                  onmouseout="this.style.opacity = '1'"
+                  class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
                   >GitHub ↗</a
                 >
                 <a
                   href="#"
-                  style="
-                    font-size: 0.82rem;
-                    color: var(--muted);
-                    font-weight: 500;
-                    transition: color 0.2s;
-                  "
-                  onmouseover="this.style.color = 'var(--text)'"
-                  onmouseout="this.style.color = 'var(--muted)'"
+                  class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
               </div>
@@ -1368,77 +689,37 @@
     </section>
 
     <!-- ══════════════ EXPERIÊNCIA ══════════════ -->
-    <section
-      id="experiencia"
-      style="padding: 100px 24px; border-top: 1px solid var(--border)"
-    >
+    <section id="experiencia" class="py-25 px-6 border-t border-(--border)">
       <div
-        style="
-          max-width: 1100px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 80px;
-          align-items: start;
-        "
+        class="max-w-275 mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-start"
       >
         <div class="reveal">
           <p
-            class="font-mono"
-            style="
-              font-size: 0.75rem;
-              color: var(--violet-l);
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-              margin-bottom: 10px;
-            "
+            class="font-mono text-[0.75rem] text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
           >
             // trajetória
           </p>
           <h2
-            class="font-display"
-            style="
-              font-size: 2rem;
-              font-weight: 700;
-              letter-spacing: -0.03em;
-              margin-bottom: 40px;
-            "
+            class="font-display text-[2rem] font-bold tracking-[-0.03em] mb-10"
           >
             Experiência
           </h2>
 
-          <div style="position: relative; padding-left: 24px">
+          <div class="relative pl-6">
             <div class="tl-line"></div>
 
-            <div style="position: relative; margin-bottom: 36px">
+            <div class="relative mb-9">
               <div class="tl-dot"></div>
-              <span
-                class="font-mono"
-                style="font-size: 0.72rem; color: var(--muted)"
+              <span class="font-mono text-[0.72rem] text-(--muted)"
                 >Jan/2026 - Presente</span
               >
-              <h4
-                class="font-display"
-                style="font-weight: 600; font-size: 1rem; margin: 6px 0 4px"
-              >
+              <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Software Engineer Jr.
               </h4>
-              <div
-                style="
-                  color: var(--violet-l);
-                  font-size: 0.83rem;
-                  margin-bottom: 8px;
-                "
-              >
+              <div class="text-[0.83rem] text-(--violet-l) mb-2">
                 IVI Data Science · Remoto
               </div>
-              <p
-                style="
-                  color: var(--muted);
-                  font-size: 0.83rem;
-                  line-height: 1.65;
-                "
-              >
+              <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
                 Desenvolvimento e evolução de uma plataforma de cursos online e
                 e-commerce, atuando na implementação de novas funcionalidades,
                 melhorias de experiência do usuário e integração de sistemas de
@@ -1446,70 +727,36 @@
               </p>
             </div>
 
-            <div style="position: relative; margin-bottom: 36px">
+            <div class="relative mb-9">
               <div class="tl-dot"></div>
-              <span
-                class="font-mono"
-                style="font-size: 0.72rem; color: var(--muted)"
+              <span class="font-mono text-[0.72rem] text-(--muted)"
                 >Nov/2025 - Feb/2026</span
               >
-              <h4
-                class="font-display"
-                style="font-weight: 600; font-size: 1rem; margin: 6px 0 4px"
-              >
+              <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Software Engineer Jr.
               </h4>
-              <div
-                style="
-                  color: var(--violet-l);
-                  font-size: 0.83rem;
-                  margin-bottom: 8px;
-                "
-              >
+              <div class="text-[0.83rem] text-(--violet-l) mb-2">
                 SoulCode Academy · Remoto
               </div>
-              <p
-                style="
-                  color: var(--muted);
-                  font-size: 0.83rem;
-                  line-height: 1.65;
-                "
-              >
+              <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
                 Desenvolvimento de sites e sistemas para diferentes clientes,
                 com atuação em JavaScript moderno, React e desenvolvimento
                 frontend.
               </p>
             </div>
 
-            <div style="position: relative">
+            <div class="relative">
               <div class="tl-dot"></div>
-              <span
-                class="font-mono"
-                style="font-size: 0.72rem; color: var(--muted)"
+              <span class="font-mono text-[0.72rem] text-(--muted)"
                 >jun/2022 - nov/2025</span
               >
-              <h4
-                class="font-display"
-                style="font-weight: 600; font-size: 1rem; margin: 6px 0 4px"
-              >
+              <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Programming Teacher
               </h4>
-              <div
-                style="
-                  color: var(--violet-l);
-                  font-size: 0.83rem;
-                  margin-bottom: 8px;
-                "
-              >
+              <div class="text-[0.83rem] text-(--violet-l) mb-2">
                 SoulCode Academy · Remoto
               </div>
-              <p
-                style="
-                  color: var(--muted);
-                  font-size: 0.83rem;
-                  line-height: 1.65;
-                "
-              >
+              <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
                 Atuação como professor e mentor em desenvolvimento de software,
                 ministrando aulas de programação, orientando projetos e
                 acompanhando a evolução dos alunos.
@@ -1520,125 +767,51 @@
 
         <div class="reveal">
           <p
-            class="font-mono"
-            style="
-              font-size: 0.75rem;
-              color: var(--violet-l);
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-              margin-bottom: 10px;
-            "
+            class="font-mono text-[0.75rem] text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
           >
             // formação
           </p>
           <h2
-            class="font-display"
-            style="
-              font-size: 2rem;
-              font-weight: 700;
-              letter-spacing: -0.03em;
-              margin-bottom: 40px;
-            "
+            class="font-display text-[2rem] font-bold tracking-[-0.03em] mb-10"
           >
             Educação
           </h2>
 
-          <div style="display: flex; flex-direction: column; gap: 16px">
-            <div
-              class="card-hover"
-              style="
-                border-radius: 14px;
-                padding: 22px;
-                background: var(--card);
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: flex-start;
-                  margin-bottom: 8px;
-                "
-              >
-                <h4
-                  class="font-display"
-                  style="font-weight: 600; font-size: 0.95rem"
-                >
+          <div class="flex flex-col gap-4">
+            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-display font-semibold text-[0.95rem]">
                   Ciência da Computação
                 </h4>
-                <span
-                  class="font-mono"
-                  style="font-size: 0.7rem; color: var(--muted)"
+                <span class="font-mono text-[0.7rem] text-(--muted)"
                   >2020-2025</span
                 >
               </div>
-              <div style="color: var(--violet-l); font-size: 0.83rem">
+              <div class="text-[0.83rem] text-(--violet-l)">
                 Instituto Federal · Tianguá, CE
               </div>
             </div>
 
-            <div
-              class="card-hover"
-              style="
-                border-radius: 14px;
-                padding: 22px;
-                background: var(--card);
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: flex-start;
-                  margin-bottom: 8px;
-                "
-              >
-                <h4
-                  class="font-display"
-                  style="font-weight: 600; font-size: 0.95rem"
-                >
+            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-display font-semibold text-[0.95rem]">
                   Microsoft Certified: Azure Fundamentals
                 </h4>
-                <span
-                  class="font-mono"
-                  style="font-size: 0.7rem; color: var(--muted)"
-                  >2024</span
-                >
+                <span class="font-mono text-[0.7rem] text-(--muted)">2024</span>
               </div>
-              <div style="color: var(--violet-l); font-size: 0.83rem">
+              <div class="text-[0.83rem] text-(--violet-l)">
                 Microsoft Azure
               </div>
             </div>
 
-            <div
-              class="card-hover"
-              style="
-                border-radius: 14px;
-                padding: 22px;
-                background: var(--card);
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: flex-start;
-                  margin-bottom: 8px;
-                "
-              >
-                <h4
-                  class="font-display"
-                  style="font-weight: 600; font-size: 0.95rem"
-                >
+            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-display font-semibold text-[0.95rem]">
                   React — The Complete Guide
                 </h4>
-                <span
-                  class="font-mono"
-                  style="font-size: 0.7rem; color: var(--muted)"
-                  >2023</span
-                >
+                <span class="font-mono text-[0.7rem] text-(--muted)">2023</span>
               </div>
-              <div style="color: var(--violet-l); font-size: 0.83rem">
+              <div class="text-[0.83rem] text-(--violet-l)">
                 Origamid · Certificado
               </div>
             </div>
@@ -1648,89 +821,31 @@
     </section>
 
     <!-- ══════════════ CONTATO ══════════════ -->
-    <section
-      id="contato"
-      style="padding: 100px 24px; border-top: 1px solid var(--border)"
-    >
-      <div
-        style="max-width: 640px; margin: 0 auto; text-align: center"
-        class="reveal"
-      >
+    <section id="contato" class="py-25 px-6 border-t border-(--border)">
+      <div class="reveal max-w-160 mx-auto text-center">
         <div
-          style="
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 14px;
-            border-radius: 9999px;
-            border: 1px solid rgba(124, 58, 237, 0.3);
-            background: rgba(124, 58, 237, 0.08);
-            margin-bottom: 20px;
-          "
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[rgba(124,58,237,0.3)] bg-[rgba(124,58,237,0.08)] mb-5"
         >
           <div
-            style="
-              width: 7px;
-              height: 7px;
-              border-radius: 50%;
-              background: #22c55e;
-              box-shadow: 0 0 6px #22c55e;
-              animation: blink 2s ease-in-out infinite;
-            "
+            class="w-1.75 h-1.75 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e] animate-[blink_2s_ease-in-out_infinite]"
           ></div>
-          <span
-            class="font-mono"
-            style="font-size: 0.75rem; color: var(--violet-l)"
+          <span class="font-mono text-[0.75rem] text-(--violet-l)"
             >disponível para novos projetos</span
           >
         </div>
         <h2
-          class="font-display"
-          style="
-            font-size: clamp(1.8rem, 4vw, 2.8rem);
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            line-height: 1.15;
-            margin-bottom: 18px;
-          "
+          class="font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.04em] leading-[1.15] mb-4.5"
         >
           Vamos construir algo<br /><span class="grad">juntos</span>?
         </h2>
-        <p
-          style="
-            color: var(--muted);
-            line-height: 1.75;
-            font-size: 1.05rem;
-            margin-bottom: 40px;
-          "
-        >
+        <p class="text-[1.05rem] text-(--muted) leading-[1.75] mb-10">
           Seja para trocar ideias, colaborar em um projeto open source ou
           explorar oportunidades — minha caixa de entrada está aberta.
         </p>
-        <div
-          style="
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            flex-wrap: wrap;
-          "
-        >
+        <div class="flex gap-3 justify-center flex-wrap">
           <a
             href="mailto:gabrielbraga.me@gmail.com"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 10px;
-              padding: 14px 28px;
-              border-radius: 12px;
-              background: var(--violet);
-              color: #fff;
-              font-weight: 600;
-              font-size: 0.95rem;
-              transition: background 0.2s;
-            "
-            onmouseover="this.style.background = '#6D28D9'"
-            onmouseout="this.style.background = 'var(--violet)'"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-(--violet) hover:bg-[#6D28D9] text-white font-semibold text-[0.95rem] transition-colors"
           >
             <svg
               width="18"
@@ -1751,20 +866,7 @@
           <a
             href="https://linkedin.com/in/f-gabriel-braga"
             target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 10px;
-              padding: 14px 28px;
-              border-radius: 12px;
-              border: 1px solid var(--border);
-              color: var(--text);
-              font-weight: 500;
-              font-size: 0.95rem;
-              transition: border-color 0.2s;
-            "
-            onmouseover="this.style.borderColor = 'rgba(124,58,237,0.5)'"
-            onmouseout="this.style.borderColor = 'var(--border)'"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-[0.95rem] transition-colors"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -1776,20 +878,7 @@
           <a
             href="https://github.com/gab-braga"
             target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 10px;
-              padding: 14px 28px;
-              border-radius: 12px;
-              border: 1px solid var(--border);
-              color: var(--text);
-              font-weight: 500;
-              font-size: 0.95rem;
-              transition: border-color 0.2s;
-            "
-            onmouseover="this.style.borderColor = 'rgba(124,58,237,0.5)'"
-            onmouseout="this.style.borderColor = 'var(--border)'"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-[0.95rem] transition-colors"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -1803,13 +892,7 @@
     </section>
 
     <!-- ══════════════ FOOTER ══════════════ -->
-    <footer
-      style="
-        border-top: 1px solid var(--border);
-        padding: 28px 24px;
-        text-align: center;
-      "
-    >
+    <footer class="border-t border-(--border) py-7 px-6 text-center">
       <p class="font-mono" style="font-size: 0.75rem; color: var(--muted)">
         // feito com <span style="color: var(--violet-l)">♥</span> &amp; muito
         TypeScript · <span id="year"></span>
@@ -1886,7 +969,7 @@
         }
         const line = lines[lineIndex];
         if (charIndex === 0) {
-          currentLineEl = document.createElement("div");
+          currentLineEl = document.createElement("pre");
           currentLineEl.style.color = line.color || "transparent";
           currentLineEl.style.minHeight = "1.8em";
           output.appendChild(currentLineEl);
