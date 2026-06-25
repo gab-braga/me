@@ -183,28 +183,12 @@
               <div
                 class="absolute inset-0 bg-[linear-gradient(135deg,rgba(124,58,237,0.15)_0%,rgba(96,165,250,0.08)_100%)]"
               ></div>
-              <div class="relative text-center">
-                <div
-                  class="w-20 h-20 rounded-full bg-[rgba(124,58,237,0.2)] border-2 border-[rgba(124,58,237,0.4)] mx-auto mb-3 flex items-center justify-center"
-                >
-                  <svg
-                    width="36"
-                    height="36"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="rgba(167,139,250,0.8)"
-                    stroke-width="1.5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                  </svg>
-                </div>
-                <p class="font-mono text-xs text-(--muted)">
-                  <!-- // sua foto aqui -->
-                </p>
+              <div class="relative text-center p-12 md:p-16">
+                <img
+                  src="/profile.jpg"
+                  alt="Gabriel Braga"
+                  class="size-full object-cover rounded-full"
+                />
               </div>
             </div>
 
@@ -213,9 +197,9 @@
               <div
                 class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">+5</div>
+                <div class="font-display grad text-[1.8rem] font-bold">+6</div>
                 <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
-                  anos de exp.
+                  anos de experiência
                 </div>
               </div>
               <div
@@ -223,23 +207,25 @@
               >
                 <div class="font-display grad text-[1.8rem] font-bold">+30</div>
                 <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
-                  projetos
+                  projetos concluídos
                 </div>
               </div>
               <div
                 class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">3</div>
+                <div class="font-display grad text-[1.8rem] font-bold">+10</div>
                 <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
-                  stacks principais
+                  stacks utilizadas
                 </div>
               </div>
               <div
                 class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">∞</div>
+                <div class="font-display grad text-[1.8rem] font-bold">
+                  100%
+                </div>
                 <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
-                  café por dia
+                  compromisso
                 </div>
               </div>
             </div>
@@ -262,13 +248,13 @@
             <p class="text-(--muted) leading-[1.75] mb-4">
               Sou engenheiro de software especializado em Frontend, com foco em
               criar experiências digitais rápidas, acessíveis e bem
-              estruturadas. Trabalho com React/Next.js e Angular no dia a dia,
+              estruturadas. Trabalho com React/Next.js e Node.js no dia a dia,
               sempre com TypeScript como base.
             </p>
             <p class="text-(--muted) leading-[1.75] mb-7">
               Me importo com os detalhes que a maioria ignora: performance de
-              renderização, acessibilidade real, design systems escaláveis e
-              código que o próximo dev vai agradecer em ler.
+              renderização, acessibilidade, design systems escaláveis e código
+              que o próximo dev vai agradecer em ler.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="pill">#clean-code</span>
@@ -343,74 +329,101 @@
               Components e otimização de bundle.
             </p>
             <div class="mt-3.5 flex flex-wrap gap-1.5">
-              <span class="pill text-xs">hooks</span>
-              <span class="pill text-xs">context</span>
-              <span class="pill text-xs">SSR</span>
-              <span class="pill text-xs">RSC</span>
+              <span class="pill text-xs">React Hooks</span>
+              <span class="pill text-xs">Next.js App Router</span>
+              <span class="pill text-xs">Server Components</span>
+              <span class="pill text-xs">SSR / SSG</span>
             </div>
           </div>
 
-          <!-- Angular -->
+          <!-- Spring Boot -->
           <div class="card-hover rounded-2xl p-7 bg-(--card)">
             <div
-              class="w-11 h-11 rounded-xl bg-[rgba(221,0,49,0.1)] border border-[rgba(221,0,49,0.2)] flex items-center justify-center mb-4"
+              class="w-11 h-11 rounded-xl bg-[rgba(109,179,63,0.1)] border border-[rgba(109,179,63,0.2)] flex items-center justify-center mb-4"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#DD0031">
-                <path
-                  d="M12 2.5L2 6.3l1.5 12.4L12 22l8.5-3.3L22 6.3z"
-                  stroke="#DD0031"
-                  stroke-width="0.5"
-                  fill="rgba(221,0,49,0.15)"
-                />
-                <path
-                  d="M12 5l-5.5 12h2l1.1-2.75h4.8L15.5 17h2L12 5zm0 3.5l1.9 4.75H10.1L12 8.5z"
-                  fill="#DD0031"
-                />
-              </svg>
-            </div>
-            <h3 class="font-display font-semibold text-base mb-2">Angular</h3>
-            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
-              Arquitetura modular, RxJS, signals, lazy loading e construção de
-              SPAs de larga escala.
-            </p>
-            <div class="mt-3.5 flex flex-wrap gap-1.5">
-              <span class="pill text-xs">RxJS</span>
-              <span class="pill text-xs">signals</span>
-              <span class="pill text-xs">DI</span>
-              <span class="pill text-xs">standalone</span>
-            </div>
-          </div>
-
-          <!-- TypeScript / Node -->
-          <div class="card-hover rounded-2xl p-7 bg-(--card)">
-            <div
-              class="w-11 h-11 rounded-xl bg-[rgba(49,120,198,0.1)] border border-[rgba(49,120,198,0.2)] flex items-center justify-center mb-4"
-            >
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="#3178C6">
-                <g clip-path="url(#clip0_1793_1804)">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1797_1803)">
                   <path
-                    d="M0 11V22H22V0H0V11ZM17.7293 10.1237C18.2884 10.263 18.7137 10.5114 19.1052 10.9166C19.3077 11.1329 19.6084 11.5271 19.6323 11.6224C19.6396 11.6499 18.6826 12.2916 18.1033 12.6518C18.0822 12.6656 17.9978 12.5748 17.9043 12.4355C17.6202 12.023 17.3241 11.8452 16.8703 11.814C16.203 11.7682 15.774 12.1174 15.7777 12.7004C15.7716 12.8438 15.8039 12.9862 15.8712 13.1129C16.0178 13.4163 16.291 13.5988 17.1453 13.9682C18.7211 14.6465 19.3948 15.0929 19.8138 15.7282C20.2813 16.4368 20.3867 17.5688 20.0686 18.4103C19.7203 19.3252 18.854 19.9467 17.6348 20.152C17.2581 20.2189 16.3643 20.2088 15.9592 20.1355C15.0755 19.9778 14.2377 19.5415 13.7207 18.9686C13.5181 18.7458 13.123 18.1619 13.1478 18.1207C13.1578 18.106 13.2486 18.0501 13.3494 17.9914C13.4484 17.9355 13.8178 17.7219 14.1671 17.5193L14.7996 17.1527L14.9325 17.3488C15.1177 17.6312 15.5219 18.0189 15.7667 18.1482C16.4688 18.5185 17.4323 18.4663 17.9071 18.04C18.0026 17.9596 18.0782 17.8581 18.1279 17.7436C18.1777 17.6291 18.2003 17.5047 18.194 17.38C18.194 17.1252 18.1619 17.0133 18.029 16.8208C17.8585 16.577 17.5092 16.3717 16.5174 15.9408C15.3826 15.4522 14.894 15.1488 14.4467 14.6667C14.1675 14.3485 13.9613 13.973 13.8426 13.5667C13.7592 13.2559 13.7381 12.4768 13.8041 12.1633C14.0378 11.066 14.8656 10.3024 16.06 10.0751C16.4478 10.0018 17.3488 10.0292 17.7293 10.1237ZM12.5648 11.0422L12.5721 11.9433H9.7075V20.0796H7.68167V11.9433H4.81983V11.0596C4.81983 10.5701 4.82992 10.1613 4.84367 10.1521C4.85467 10.1374 6.59725 10.1301 8.70925 10.1338L12.5547 10.1448L12.5648 11.0422Z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.75788 19.2452C4.16075 19.5704 4.752 19.5099 5.0765 19.1063C5.40306 18.7041 5.34188 18.1129 4.939 17.7863C4.53681 17.4604 3.94625 17.523 3.619 17.9252C3.30962 18.3067 3.3495 18.8574 3.69806 19.1929L3.51519 19.0321C1.35575 17.0239 0 14.1604 0 10.9849C0 4.928 4.928 0 10.9862 0C14.0662 0 16.8506 1.27669 18.8478 3.32475C19.3016 2.70737 19.6948 2.01713 20.0166 1.25194C21.4163 5.45806 22.2392 8.99319 21.9381 11.7776C21.5311 17.4659 16.7764 21.9732 10.9862 21.9732C8.29675 21.9732 5.83275 20.9997 3.9215 19.3903L3.75788 19.2452ZM19.9691 15.8201C22.726 12.1516 21.1894 6.21912 19.9107 2.42756C18.7715 4.8015 15.9658 6.61719 13.5431 7.19194C11.2722 7.73369 9.26269 7.28956 7.161 8.09806C2.36913 9.94056 2.44475 15.6551 5.08475 16.9393C5.08612 16.9393 5.24288 17.0246 5.24081 17.0218C5.24081 17.0204 9.12106 16.2504 11.2661 15.4584C14.4011 14.3007 17.8427 11.4469 18.975 8.13175C18.3721 11.5796 15.4124 14.8968 12.4389 16.4203C10.8563 17.2329 9.62569 17.4137 7.02144 18.315C6.70244 18.4236 6.45219 18.5309 6.45219 18.5309C7.11219 18.4209 7.77013 18.3851 7.77013 18.3851C11.4778 18.2098 17.2624 19.4274 19.9698 15.8207L19.9691 15.8201Z"
+                    fill="#70AD51"
                   />
                 </g>
                 <defs>
-                  <clipPath id="clip0_1793_1804">
+                  <clipPath id="clip0_1797_1803">
                     <rect width="22" height="22" fill="white" />
                   </clipPath>
                 </defs>
               </svg>
             </div>
+
             <h3 class="font-display font-semibold text-base mb-2">
-              TypeScript & Node.js
+              Spring Boot
             </h3>
+
             <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
-              Tipagem estrita, generics, utilitários avançados e APIs
-              REST/GraphQL no backend quando necessário.
+              Desenvolvimento de APIs REST, microsserviços, autenticação,
+              segurança e aplicações corporativas com o ecossistema Spring.
             </p>
+
             <div class="mt-3.5 flex flex-wrap gap-1.5">
-              <span class="pill text-xs">generics</span>
-              <span class="pill text-xs">decorators</span>
-              <span class="pill text-xs">REST</span>
-              <span class="pill text-xs">GraphQL</span>
+              <span class="pill text-xs">Spring Web</span>
+              <span class="pill text-xs">Spring Security</span>
+              <span class="pill text-xs">JPA</span>
+              <span class="pill text-xs">Microservices</span>
+            </div>
+          </div>
+
+          <!-- Firebase -->
+          <div class="card-hover rounded-2xl p-7 bg-(--card)">
+            <div
+              class="w-11 h-11 rounded-xl bg-[rgba(255,202,40,0.12)] border border-[rgba(255,202,40,0.25)] flex items-center justify-center mb-4"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.4371 12.6265C19.4371 17.8033 15.7382 22 10.7688 22C5.79945 22 2.10059 17.8033 2.10059 12.6265C2.10059 7.44971 6.09609 13.9924 11.0655 13.9924C16.0348 13.9924 19.4371 7.44971 19.4371 12.6265Z"
+                  fill="#FF9100"
+                />
+                <path
+                  d="M19.5684 12.9529C19.4695 17.8474 16.4208 20.2534 14.4268 21.1762C9.69719 18.7867 7.29116 16.1664 6.64844 11.0578C6.64844 5.30305 8.01627 2.9004 11.2957 0C16.8823 6.60829 19.2059 8.5694 19.5684 12.9529Z"
+                  fill="#DD2C00"
+                />
+                <path
+                  d="M11.2121 12.9529C11.8215 14.881 12.1349 18.8361 7.57008 21.341C6.1858 21.0444 2 18.1144 2 12.9529C2 10.593 3.00527 9.22852 3.17004 8.81654C6.59783 8.04198 10.2068 9.77235 11.2121 12.9529Z"
+                  fill="#FFC400"
+                />
+                <path
+                  d="M6.72612 8.88037C8.81111 9.43436 10.5608 10.8878 11.2133 12.9524C11.6342 14.2842 11.914 16.5833 10.5422 18.7035C8.32312 16.8269 7.08289 14.5106 6.64844 11.0572C6.64844 10.2726 6.67389 9.55017 6.72612 8.88037Z"
+                  fill="#FF9100"
+                />
+              </svg>
+            </div>
+
+            <h3 class="font-display font-semibold text-base mb-2">Firebase</h3>
+
+            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+              Backend as a Service para autenticação, banco de dados em tempo
+              real, storage e integrações rápidas com aplicações web e mobile.
+            </p>
+
+            <div class="mt-3.5 flex flex-wrap gap-1.5">
+              <span class="pill text-xs">Auth</span>
+              <span class="pill text-xs">Firestore</span>
+              <span class="pill text-xs">Storage</span>
+              <span class="pill text-xs">Hosting</span>
             </div>
           </div>
 
@@ -435,7 +448,7 @@
                 Tailwind CSS
               </div>
               <div class="text-[0.78rem] text-(--muted) mt-0.5">
-                Design systems, tokens, responsivo
+                Design systems, Shadcn UI, responsivo
               </div>
             </div>
           </div>
@@ -748,7 +761,7 @@
             <div class="relative">
               <div class="tl-dot"></div>
               <span class="font-mono text-[0.72rem] text-(--muted)"
-                >jun/2022 - nov/2025</span
+                >Jun/2022 - Nov/2025</span
               >
               <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Programming Teacher
@@ -795,7 +808,20 @@
             <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
               <div class="flex justify-between items-start mb-2">
                 <h4 class="font-display font-semibold text-[0.95rem]">
-                  Microsoft Certified: Azure Fundamentals
+                  Microsoft Certified: Azure AI Fundamentals
+                </h4>
+                <span class="font-mono text-[0.7rem] text-(--muted)">2024</span>
+              </div>
+              <div class="text-[0.83rem] text-(--violet-l)">
+                Microsoft Azure
+              </div>
+            </div>
+
+            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-display font-semibold text-[0.95rem]">
+                  Microsoft Certified: Security, Compliance, and Identity
+                  Fundamentals
                 </h4>
                 <span class="font-mono text-[0.7rem] text-(--muted)">2024</span>
               </div>
@@ -842,7 +868,7 @@
           Seja para trocar ideias, colaborar em um projeto open source ou
           explorar oportunidades — minha caixa de entrada está aberta.
         </p>
-        <div class="flex gap-3 justify-center flex-wrap">
+        <div class="flex gap-3 justify-center flex-wrap max-w-md mx-auto">
           <a
             href="mailto:gabrielbraga.me@gmail.com"
             class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-(--violet) hover:bg-[#6D28D9] text-white font-semibold text-[0.95rem] transition-colors"
@@ -862,6 +888,19 @@
               />
             </svg>
             Mandar e-mail
+          </a>
+          <a
+            href="https://wa.me/5588992714671"
+            target="_blank"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold text-[0.95rem] transition-colors"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.52 3.48A11.91 11.91 0 0012.06 0C5.5 0 .16 5.34.16 11.9c0 2.09.55 4.13 1.6 5.93L0 24l6.32-1.66a11.84 11.84 0 005.74 1.47h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.43zM12.07 21.5h-.01a9.56 9.56 0 01-4.88-1.34l-.35-.21-3.75.99 1-3.65-.23-.37a9.56 9.56 0 01-1.49-5.12c0-5.28 4.3-9.58 9.59-9.58 2.56 0 4.96 1 6.76 2.8a9.51 9.51 0 012.8 6.77c0 5.28-4.3 9.59-9.58 9.59zm5.27-7.22c-.29-.15-1.73-.85-2- .95-.27-.1-.47-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.43-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.36-.03-.51-.08-.15-.66-1.59-.9-2.17-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.11 3.22 5.1 4.51.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.73-.71 1.98-1.39.25-.68.25-1.26.17-1.39-.08-.13-.27-.2-.56-.35z"
+              />
+            </svg>
+
+            Falar no WhatsApp
           </a>
           <a
             href="https://linkedin.com/in/f-gabriel-braga"
@@ -894,97 +933,10 @@
     <!-- ══════════════ FOOTER ══════════════ -->
     <footer class="border-t border-(--border) py-7 px-6 text-center">
       <p class="font-mono" style="font-size: 0.75rem; color: var(--muted)">
-        // feito com <span style="color: var(--violet-l)">♥</span> &amp; muito
-        TypeScript · <span id="year"></span>
+        Next.js • Node.js • Spring Boot • Angular • MySQL • MongoDB • Strapi •
+        Microsoft Azure • Google Cloud • Firebase •
+        <span class="year"></span>
       </p>
     </footer>
-
-    <script>
-      // ── Ano dinâmico ──
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // ── Navbar scroll ──
-      const navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 40) {
-          navbar.style.background = "rgba(8,12,16,0.92)";
-          navbar.style.backdropFilter = "blur(16px)";
-          navbar.style.borderBottomColor = "var(--border)";
-        } else {
-          navbar.style.background = "transparent";
-          navbar.style.backdropFilter = "none";
-          navbar.style.borderBottomColor = "transparent";
-        }
-      });
-
-      // ── Scroll reveal ──
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              observer.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
-      document
-        .querySelectorAll(".reveal")
-        .forEach((el) => observer.observe(el));
-
-      // ── Terminal typewriter ──
-      const lines = [
-        { text: "import React from 'react';", color: "#A78BFA" },
-        { text: "import { useState } from 'react';", color: "#A78BFA" },
-        { text: "", color: "" },
-        { text: "interface Props {", color: "#60A5FA" },
-        { text: "  name: string;", color: "#E2E8F0" },
-        { text: "  role: 'Frontend Engineer';", color: "#E2E8F0" },
-        { text: "}", color: "#60A5FA" },
-        { text: "", color: "" },
-        { text: "const Dev = ({ name, role }: Props) => {", color: "#34D399" },
-        { text: "  return (", color: "#E2E8F0" },
-        { text: "    <div className='portfolio'>", color: "#FCD34D" },
-        { text: "      <h1>{name}</h1>", color: "#E2E8F0" },
-        { text: "      <p>{role}</p>", color: "#E2E8F0" },
-        { text: "    </div>", color: "#FCD34D" },
-        { text: "  );", color: "#E2E8F0" },
-        { text: "};", color: "#34D399" },
-        { text: "", color: "" },
-        { text: "export default Dev;", color: "#A78BFA" },
-      ];
-
-      const output = document.getElementById("code-output");
-      let lineIndex = 0,
-        charIndex = 0;
-      let currentLineEl = null;
-
-      function typeLine() {
-        if (lineIndex >= lines.length) {
-          const cursor = document.createElement("span");
-          cursor.className = "cursor";
-          output.appendChild(cursor);
-          return;
-        }
-        const line = lines[lineIndex];
-        if (charIndex === 0) {
-          currentLineEl = document.createElement("pre");
-          currentLineEl.style.color = line.color || "transparent";
-          currentLineEl.style.minHeight = "1.8em";
-          output.appendChild(currentLineEl);
-        }
-        if (charIndex < line.text.length) {
-          currentLineEl.textContent += line.text[charIndex];
-          charIndex++;
-          setTimeout(typeLine, line.text.length === 0 ? 0 : 28);
-        } else {
-          lineIndex++;
-          charIndex = 0;
-          setTimeout(typeLine, lineIndex % 3 === 0 ? 120 : 40);
-        }
-      }
-      setTimeout(typeLine, 800);
-    </script>
   </body>
 </html>
