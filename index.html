@@ -181,15 +181,8 @@
               class="aspect-square w-full sm:max-w-80 md:max-w-90 rounded-2xl bg-(--card) border border-(--border) overflow-hidden relative flex items-center justify-center"
             >
               <div
-                class="absolute inset-0 bg-[linear-gradient(135deg,rgba(124,58,237,0.15)_0%,rgba(96,165,250,0.08)_100%)]"
+                class="absolute inset-0 bg-cover bg-[linear-gradient(135deg,#3437d140_0%,#60a5fa40_100%),url(/images/profile.jpg)]"
               ></div>
-              <div class="relative text-center p-12 md:p-16">
-                <img
-                  src="/profile.jpg"
-                  alt="Gabriel Braga"
-                  class="size-full object-cover rounded-full"
-                />
-              </div>
             </div>
 
             <!-- mini stats -->
@@ -559,35 +552,30 @@
             class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
           >
             <div
-              class="h-40 bg-[linear-gradient(135deg,rgba(124,58,237,0.25)_0%,rgba(96,165,250,0.12)_100%)] flex items-center justify-center border-b border-(--border)"
-            >
-              <div
-                class="font-mono text-[0.8rem] text-[rgba(167,139,250,0.7)] text-center p-5"
-              >
-                <div class="mb-2 text-(--muted)">// preview do projeto</div>
-                <div>&lt;App /&gt; renderizando...</div>
-              </div>
-            </div>
+              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/redecon.jpg)] flex items-center justify-center border-b border-(--border)"
+            ></div>
             <div class="p-6 flex-1 flex flex-col">
               <div class="flex items-center gap-2 mb-2.5">
                 <h3 class="font-display font-semibold text-base flex-1">
-                  Design System UI
+                  Instituto RedeCon
                 </h3>
                 <span
-                  class="pill text-[0.68rem] border border-[rgba(124,58,237,0.3)] text-(--violet-l)"
-                  >React</span
+                  class="pill text-[0.68rem] border border-[rgba(221,0,49,0.3)] text-[#fda4af]"
+                  >React.js</span
                 >
               </div>
               <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
-                Biblioteca de componentes acessíveis e temáticos, com Storybook,
-                testes e documentação.
+                A plataforma permite o controle de matrículas de alunos,
+                disponibilização de materiais de estudo, gerenciamento de
+                questões e atividades, além do acompanhamento do desempenho
+                acadêmico.
               </p>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <span class="pill text-xs">TypeScript</span>
-                <span class="pill text-xs">Storybook</span>
-                <span class="pill text-xs">Jest</span>
+                <span class="pill text-xs">Shadcn UI</span>
+                <span class="pill text-xs">Prisma ORM</span>
+                <span class="pill text-xs">Mercado Pago API</span>
               </div>
-              <div class="mt-4 flex gap-3">
+              <!-- <div class="mt-4 flex gap-3">
                 <a
                   href="#"
                   class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
@@ -598,7 +586,7 @@
                   class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -607,35 +595,31 @@
             class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
           >
             <div
-              class="h-40 bg-[linear-gradient(135deg,rgba(16,185,129,0.18)_0%,rgba(96,165,250,0.1)_100%)] flex items-center justify-center border-b border-(--border)"
-            >
-              <div
-                class="font-mono text-[0.8rem] text-[rgba(110,231,183,0.7)] text-center p-5"
-              >
-                <div class="mb-2 text-(--muted)">// preview do projeto</div>
-                <div>ng serve --open</div>
-              </div>
-            </div>
+              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/coprof.jpg)] flex items-center justify-center border-b border-(--border)"
+            ></div>
             <div class="p-6 flex-1 flex flex-col">
               <div class="flex items-center gap-2 mb-2.5">
                 <h3 class="font-display font-semibold text-base flex-1">
-                  Dashboard Analytics
+                  CoProf
                 </h3>
                 <span
-                  class="pill text-[0.68rem] border border-[rgba(221,0,49,0.3)] text-[#fda4af]"
-                  >Angular</span
+                  class="pill text-[0.68rem] border border-[rgba(96,165,250,0.3)] text-[#93c5fd]"
+                  >Next.js</span
                 >
               </div>
               <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
-                Painel de métricas em tempo real com gráficos interativos,
-                filtros avançados e exportação de dados.
+                Plataforma web desenvolvida para auxiliar professores no
+                registro e organização de aulas. A aplicação permite gravar
+                áudios, gerar transcrições automáticas e utilizar inteligência
+                artificial para criar resumos inteligentes, destacando os
+                principais tópicos abordados.
               </p>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <span class="pill text-xs">RxJS</span>
-                <span class="pill text-xs">NgRx</span>
-                <span class="pill text-xs">Chart.js</span>
+                <span class="pill text-xs">MongoDB</span>
+                <span class="pill text-xs">OpenAI API</span>
+                <span class="pill text-xs">Google Classroom API</span>
               </div>
-              <div class="mt-4 flex gap-3">
+              <!-- <div class="mt-4 flex gap-3">
                 <a
                   href="#"
                   class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
@@ -646,7 +630,7 @@
                   class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -655,35 +639,29 @@
             class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
           >
             <div
-              class="h-40 bg-[linear-gradient(135deg,rgba(245,158,11,0.15)_0%,rgba(124,58,237,0.12)_100%)] flex items-center justify-center border-b border-(--border)"
-            >
-              <div
-                class="font-mono text-[0.8rem] text-[rgba(253,211,100,0.7)] text-center p-5"
-              >
-                <div class="mb-2 text-(--muted)">// preview do projeto</div>
-                <div>next build ✓ 24 pages</div>
-              </div>
-            </div>
+              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/marriage.jpg)] flex items-center justify-center border-b border-(--border)"
+            ></div>
             <div class="p-6 flex-1 flex flex-col">
               <div class="flex items-center gap-2 mb-2.5">
                 <h3 class="font-display font-semibold text-base flex-1">
-                  E-commerce Next.js
+                  Wedding Site
                 </h3>
                 <span
-                  class="pill text-[0.68rem] border border-[rgba(96,165,250,0.3)] text-[#93c5fd]"
+                  class="pill text-[0.68rem] border border-[rgba(124,58,237,0.3)] text-(--violet-l)"
                   >Next.js</span
                 >
               </div>
               <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
-                Loja virtual com SSR, carrinho otimista, pagamento integrado e
-                score 100 no Lighthouse.
+                Plataforma digital personalizada do casal que reúne informações
+                do casamento em um único lugar, como história dos noivos,
+                detalhes da cerimônia e recepção, confirmação de presença, lista
+                de presentes, galeria de fotos e comunicados aos convidados.
               </p>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <span class="pill text-xs">App Router</span>
-                <span class="pill text-xs">Stripe</span>
-                <span class="pill text-xs">Prisma</span>
+                <span class="pill text-xs">Firebase</span>
+                <span class="pill text-xs">Tailwind CSS</span>
               </div>
-              <div class="mt-4 flex gap-3">
+              <!-- <div class="mt-4 flex gap-3">
                 <a
                   href="#"
                   class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
@@ -694,7 +672,7 @@
                   class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
