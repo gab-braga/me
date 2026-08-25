@@ -1,7 +1,7 @@
 // ── Terminal typewriter ──
 const lines = [
-  { text: "import React from 'react';", color: "#A78BFA" },
-  { text: "import { useState } from 'react';", color: "#A78BFA" },
+  { text: "import React from 'react';", color: "#60A5FA" },
+  { text: "import { useState } from 'react';", color: "#60A5FA" },
   { text: "", color: "" },
   { text: "interface Props {", color: "#60A5FA" },
   { text: "  name: string;", color: "#E2E8F0" },
@@ -17,7 +17,7 @@ const lines = [
   { text: "  );", color: "#E2E8F0" },
   { text: "};", color: "#34D399" },
   { text: "", color: "" },
-  { text: "export default Dev;", color: "#A78BFA" },
+  { text: "export default Dev;", color: "#60A5FA" },
 ];
 
 const output = document.getElementById("code-output");
