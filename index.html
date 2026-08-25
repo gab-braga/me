@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-app">
+  <body class="min-h-screen bg-[#080c10] font-sans text-[#e2e8f0]">
     <!-- ══════════════ NAVBAR ══════════════ -->
     <header
       id="navbar"
@@ -24,18 +24,33 @@
           href="#"
           class="font-display font-bold text-[1.1rem] tracking-[-0.03em]"
         >
-          &lt;<span class="text-violet">Gabriel</span> /&gt;
+          &lt;<span class="text-primary-light">Gabriel</span> /&gt;
         </a>
         <nav class="flex gap-7 items-center">
-          <a href="#sobre" class="nav-link hidden sm:block">Sobre</a>
-          <a href="#skills" class="nav-link hidden sm:block">Skills</a>
-          <a href="#projetos" class="nav-link hidden sm:block">Projetos</a>
-          <a href="#experiencia" class="nav-link hidden sm:block">
+          <a
+            href="#sobre"
+            class="text-sm font-medium text-[#6b7280] transition-colors duration-200 hover:text-[#e2e8f0] hidden sm:block"
+            >Sobre</a
+          >
+          <a
+            href="#skills"
+            class="text-sm font-medium text-[#6b7280] transition-colors duration-200 hover:text-[#e2e8f0] hidden sm:block"
+            >Skills</a
+          >
+          <a
+            href="#projetos"
+            class="text-sm font-medium text-[#6b7280] transition-colors duration-200 hover:text-[#e2e8f0] hidden sm:block"
+            >Projetos</a
+          >
+          <a
+            href="#experiencia"
+            class="text-sm font-medium text-[#6b7280] transition-colors duration-200 hover:text-[#e2e8f0] hidden sm:block"
+          >
             Experiência
           </a>
           <a
             href="#contato"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-(--violet) hover:bg-[#6D28D9] text-white text-sm font-semibold transition-[background] duration-200"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary-dark text-white text-sm font-semibold transition-[background] duration-200"
           >
             Contato
           </a>
@@ -45,14 +60,14 @@
 
     <!-- ══════════════ HERO ══════════════ -->
     <section
-      class="grid-bg min-h-screen flex items-center px-6 py-25 pb-15 relative overflow-hidden"
+      class="bg-[linear-gradient(rgba(124,58,237,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(124,58,237,0.04)_1px,transparent_1px)] bg-size-[48px_48px] min-h-screen flex items-center px-6 py-25 pb-15 relative overflow-hidden"
     >
       <!-- blobs -->
       <div
-        class="blob w-125 h-125 bg-[rgba(124,58,237,0.12)] -top-20 -left-30"
+        class="pointer-events-none absolute rounded-full blur-[90px] w-125 h-125 bg-[rgba(124,58,237,0.12)] -top-20 -left-30"
       ></div>
       <div
-        class="blob w-75 h-75 bg-[rgba(96,165,250,0.07)] bottom-15 right-0"
+        class="pointer-events-none absolute rounded-full blur-[90px] w-75 h-75 bg-[rgba(96,165,250,0.07)] bottom-15 right-0"
       ></div>
 
       <div
@@ -61,7 +76,7 @@
         <!-- left: copy -->
         <div>
           <span
-            class="font-mono text-[0.78rem] text-(--violet-l) tracking-[0.08em] uppercase"
+            class="font-mono text-[0.78rem] text-primary-light tracking-[0.08em] uppercase"
             >Engenheiro de Software · Frontend</span
           >
 
@@ -69,11 +84,14 @@
             class="font-display text-[clamp(2.4rem,5vw,3.6rem)] font-bold leading-[1.08] tracking-[-0.04em] my-4 mb-6"
           >
             Olá, sou<br />
-            <span class="grad">Gabriel Braga</span><br />
+            <span
+              class="bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent"
+              >Gabriel Braga</span
+            ><br />
             aqui.
           </h1>
 
-          <p class="text-[1.05rem] leading-[1.7] max-w-100 mb-9 text-(--muted)">
+          <p class="text-[1.05rem] leading-[1.7] max-w-100 mb-9 text-[#6b7280]">
             Transformo requisitos complexos em interfaces que as pessoas adoram
             usar. Foco em React, Angular e TypeScript — com um olho sempre no
             detalhe e outro na performance.
@@ -82,7 +100,7 @@
           <div class="flex gap-3 flex-wrap">
             <a
               href="#projetos"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-(--violet) hover:bg-[#6D28D9] text-white font-semibold text-sm transition-[background] duration-200"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary hover:bg-primary-dark text-white font-semibold text-sm transition-[background] duration-200"
             >
               Ver projetos
               <svg
@@ -103,7 +121,7 @@
             <a
               href="https://github.com/gab-braga"
               target="_blank"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-sm transition-[border-color] duration-200"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[#1c2333] hover:border-[rgba(124,58,237,0.5)] text-[#e2e8f0] font-medium text-sm transition-[border-color] duration-200"
             >
               <svg
                 width="16"
@@ -120,7 +138,7 @@
             <a
               href="https://linkedin.com/in/f-gabriel-braga"
               target="_blank"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-sm transition-[border-color] duration-200"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[#1c2333] hover:border-[rgba(124,58,237,0.5)] text-[#e2e8f0] font-medium text-sm transition-[border-color] duration-200"
             >
               <svg
                 width="16"
@@ -139,12 +157,16 @@
 
         <!-- right: terminal animado -->
         <div class="relative">
-          <div class="terminal text-xs">
-            <div class="terminal-bar">
-              <div class="dot bg-[#ff5f57]"></div>
-              <div class="dot bg-[#febc2e]"></div>
-              <div class="dot bg-[#28c840]"></div>
-              <span class="font-mono ml-2 text-[0.72rem] text-(--muted)">
+          <div
+            class="overflow-hidden rounded-[14px] border border-[#1c2333] bg-[#0a0e16] text-xs"
+          >
+            <div
+              class="flex items-center gap-1.5 border-b border-[#1c2333] bg-[#0d1117] px-4 py-3"
+            >
+              <div class="h-2.5 w-2.5 rounded-full bg-[#ff5f57]"></div>
+              <div class="h-2.5 w-2.5 rounded-full bg-[#febc2e]"></div>
+              <div class="h-2.5 w-2.5 rounded-full bg-[#28c840]"></div>
+              <span class="font-mono ml-2 text-[0.72rem] text-[#6b7280]">
                 portfolio.tsx
               </span>
             </div>
@@ -156,12 +178,12 @@
 
           <!-- badge flutuante -->
           <!-- <div
-            class="absolute bottom-4.5 right-6 bg-(--card) border border-(--border) rounded-xl px-4 py-2.5 flex items-center gap-2.5"
+            class="absolute bottom-4.5 right-6 bg-[#0f1420] border border-[#1c2333] rounded-xl px-4 py-2.5 flex items-center gap-2.5"
           >
             <div
               class="w-2 h-2 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e]"
             ></div>
-            <span class="font-mono text-xs text-(--text)">
+            <span class="font-mono text-xs text-[#e2e8f0]">
               Aberto a oportunidades
             </span>
           </div> -->
@@ -172,13 +194,16 @@
     <!-- ══════════════ SOBRE ══════════════ -->
     <section id="sobre" class="py-25 px-6">
       <div class="max-w-275 mx-auto">
-        <div class="reveal grid grid-cols-1 md:grid-cols-2 items-center gap-20">
+        <div
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 grid grid-cols-1 md:grid-cols-2 items-center gap-20"
+        >
           <!-- avatar placeholder com stats -->
           <div
             class="w-full max-w-110 sm:max-w-none md:max-w-90 flex flex-col sm:flex-row md:flex-col gap-4 max-sm:mx-auto"
           >
             <div
-              class="aspect-square w-full sm:max-w-80 md:max-w-90 rounded-2xl bg-(--card) border border-(--border) overflow-hidden relative flex items-center justify-center"
+              class="aspect-square w-full sm:max-w-80 md:max-w-90 rounded-2xl bg-[#0f1420] border border-[#1c2333] overflow-hidden relative flex items-center justify-center"
             >
               <div
                 class="absolute inset-0 bg-cover bg-[linear-gradient(135deg,#3437d140_0%,#60a5fa40_100%),url(/images/profile.jpg)]"
@@ -188,36 +213,50 @@
             <!-- mini stats -->
             <div class="w-full grid grid-cols-2 gap-3">
               <div
-                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
+                class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">+6</div>
-                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
+                <div
+                  class="font-display bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent text-[1.8rem] font-bold"
+                >
+                  +6
+                </div>
+                <div class="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
                   anos de experiência
                 </div>
               </div>
               <div
-                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
+                class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">+30</div>
-                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
+                <div
+                  class="font-display bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent text-[1.8rem] font-bold"
+                >
+                  +30
+                </div>
+                <div class="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
                   projetos concluídos
                 </div>
               </div>
               <div
-                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
+                class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">+10</div>
-                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
+                <div
+                  class="font-display bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent text-[1.8rem] font-bold"
+                >
+                  +10
+                </div>
+                <div class="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
                   stacks utilizadas
                 </div>
               </div>
               <div
-                class="card-hover rounded-xl p-4 bg-(--card) flex flex-col items-center justify-center"
+                class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center"
               >
-                <div class="font-display grad text-[1.8rem] font-bold">
+                <div
+                  class="font-display bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent text-[1.8rem] font-bold"
+                >
                   100%
                 </div>
-                <div class="text-[0.78rem] text-(--muted) text-center mt-0.5">
+                <div class="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
                   compromisso
                 </div>
               </div>
@@ -227,34 +266,51 @@
           <!-- texto -->
           <div>
             <p
-              class="font-mono text-xs text-(--violet-l) tracking-[0.08em] uppercase mb-3"
+              class="font-mono text-xs text-primary-light tracking-[0.08em] uppercase mb-3"
             >
               // sobre mim
             </p>
             <h2
               class="font-display text-[2.2rem] font-bold leading-[1.15] tracking-[-0.03em] mb-5"
             >
-              Código limpo.<br />Interfaces que<span class="grad">
+              Código limpo.<br />Interfaces que<span
+                class="bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent"
+              >
                 funcionam</span
               >.
             </h2>
-            <p class="text-(--muted) leading-[1.75] mb-4">
+            <p class="text-[#6b7280] leading-[1.75] mb-4">
               Sou engenheiro de software especializado em Frontend, com foco em
               criar experiências digitais rápidas, acessíveis e bem
               estruturadas. Trabalho com React/Next.js e Node.js no dia a dia,
               sempre com TypeScript como base.
             </p>
-            <p class="text-(--muted) leading-[1.75] mb-7">
+            <p class="text-[#6b7280] leading-[1.75] mb-7">
               Me importo com os detalhes que a maioria ignora: performance de
               renderização, acessibilidade, design systems escaláveis e código
               que o próximo dev vai agradecer em ler.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="pill">#clean-code</span>
-              <span class="pill">#performance</span>
-              <span class="pill">#a11y</span>
-              <span class="pill">#design-systems</span>
-              <span class="pill">#tdd</span>
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
+                >#clean-code</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
+                >#performance</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
+                >#a11y</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
+                >#design-systems</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
+                >#tdd</span
+              >
             </div>
           </div>
         </div>
@@ -262,11 +318,14 @@
     </section>
 
     <!-- ══════════════ SKILLS ══════════════ -->
-    <section id="skills" class="py-20 px-6 border-t border-(--border)">
+    <section id="skills" class="py-20 px-6 border-t border-[#1c2333]">
       <div class="max-w-275 mx-auto">
-        <div class="reveal text-center mb-14">
+        <div
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 text-center mb-14"
+        >
           <p
-            class="font-mono text-xs text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
+            class="font-mono text-xs text-primary-light tracking-[0.08em] uppercase mb-2.5"
           >
             // stack
           </p>
@@ -275,9 +334,14 @@
           </h2>
         </div>
 
-        <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 grid grid-cols-1 md:grid-cols-3 gap-5"
+        >
           <!-- React / Next -->
-          <div class="card-hover rounded-2xl p-7 bg-(--card)">
+          <div
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl p-7 bg-[#0f1420]"
+          >
             <div
               class="w-11 h-11 rounded-xl bg-[rgba(97,218,251,0.1)] border border-[rgba(97,218,251,0.2)] flex items-center justify-center mb-4"
             >
@@ -317,20 +381,34 @@
             <h3 class="font-display font-semibold text-base mb-2">
               React & Next.js
             </h3>
-            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+            <p class="text-[0.83rem] text-[#6b7280] leading-[1.65]">
               Componentes, hooks customizados, SSR/SSG, App Router, Server
               Components e otimização de bundle.
             </p>
             <div class="mt-3.5 flex flex-wrap gap-1.5">
-              <span class="pill text-xs">React Hooks</span>
-              <span class="pill text-xs">Next.js App Router</span>
-              <span class="pill text-xs">Server Components</span>
-              <span class="pill text-xs">SSR / SSG</span>
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >React Hooks</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Next.js App Router</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Server Components</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >SSR / SSG</span
+              >
             </div>
           </div>
 
           <!-- Spring Boot -->
-          <div class="card-hover rounded-2xl p-7 bg-(--card)">
+          <div
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl p-7 bg-[#0f1420]"
+          >
             <div
               class="w-11 h-11 rounded-xl bg-[rgba(109,179,63,0.1)] border border-[rgba(109,179,63,0.2)] flex items-center justify-center mb-4"
             >
@@ -361,21 +439,35 @@
               Spring Boot
             </h3>
 
-            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+            <p class="text-[0.83rem] text-[#6b7280] leading-[1.65]">
               Desenvolvimento de APIs REST, microsserviços, autenticação,
               segurança e aplicações corporativas com o ecossistema Spring.
             </p>
 
             <div class="mt-3.5 flex flex-wrap gap-1.5">
-              <span class="pill text-xs">Spring Web</span>
-              <span class="pill text-xs">Spring Security</span>
-              <span class="pill text-xs">JPA</span>
-              <span class="pill text-xs">Microservices</span>
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Spring Web</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Spring Security</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >JPA</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Microservices</span
+              >
             </div>
           </div>
 
           <!-- Firebase -->
-          <div class="card-hover rounded-2xl p-7 bg-(--card)">
+          <div
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl p-7 bg-[#0f1420]"
+          >
             <div
               class="w-11 h-11 rounded-xl bg-[rgba(255,202,40,0.12)] border border-[rgba(255,202,40,0.25)] flex items-center justify-center mb-4"
             >
@@ -407,22 +499,34 @@
 
             <h3 class="font-display font-semibold text-base mb-2">Firebase</h3>
 
-            <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+            <p class="text-[0.83rem] text-[#6b7280] leading-[1.65]">
               Backend as a Service para autenticação, banco de dados em tempo
               real, storage e integrações rápidas com aplicações web e mobile.
             </p>
 
             <div class="mt-3.5 flex flex-wrap gap-1.5">
-              <span class="pill text-xs">Auth</span>
-              <span class="pill text-xs">Firestore</span>
-              <span class="pill text-xs">Storage</span>
-              <span class="pill text-xs">Hosting</span>
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Auth</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Firestore</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Storage</span
+              >
+              <span
+                class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                >Hosting</span
+              >
             </div>
           </div>
 
           <!-- linha 2 -->
           <div
-            class="card-hover rounded-2xl p-6 bg-(--card) flex items-center gap-4"
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl p-6 bg-[#0f1420] flex items-center gap-4"
           >
             <div
               class="w-10 h-10 rounded-lg bg-[rgba(56,189,248,0.1)] border border-[rgba(56,189,248,0.2)] shrink-0 flex items-center justify-center"
@@ -440,14 +544,14 @@
               <div class="font-display font-semibold text-[0.95rem]">
                 Tailwind CSS
               </div>
-              <div class="text-[0.78rem] text-(--muted) mt-0.5">
+              <div class="text-[0.78rem] text-[#6b7280] mt-0.5">
                 Design systems, Shadcn UI, responsivo
               </div>
             </div>
           </div>
 
           <div
-            class="card-hover rounded-2xl p-6 bg-(--card) flex items-center gap-4"
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl p-6 bg-[#0f1420] flex items-center gap-4"
           >
             <div
               class="w-10 h-10 rounded-lg bg-[rgba(120,22,249,0.1)] border border-[rgba(103,14,219,0.2)] shrink-0 flex items-center justify-center"
@@ -480,14 +584,14 @@
               <div class="font-display font-semibold text-[0.95rem]">
                 Strapi
               </div>
-              <div class="text-[0.78rem] text-(--muted) mt-0.5">
+              <div class="text-[0.78rem] text-[#6b7280] mt-0.5">
                 CMS headless, APIs, modelagem de conteúdo
               </div>
             </div>
           </div>
 
           <div
-            class="card-hover rounded-2xl p-6 bg-(--card) flex items-center gap-4"
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl p-6 bg-[#0f1420] flex items-center gap-4"
           >
             <div
               class="w-10 h-10 rounded-lg bg-[rgba(251,191,36,0.1)] border border-[rgba(251,191,36,0.2)] shrink-0 flex items-center justify-center"
@@ -511,7 +615,7 @@
               <div class="font-display font-semibold text-[0.95rem]">
                 JavaScript ES2024+
               </div>
-              <div class="text-[0.78rem] text-(--muted) mt-0.5">
+              <div class="text-[0.78rem] text-[#6b7280] mt-0.5">
                 Async/await, modules, runtime APIs
               </div>
             </div>
@@ -521,14 +625,15 @@
     </section>
 
     <!-- ══════════════ PROJETOS ══════════════ -->
-    <section id="projetos" class="py-25 px-6 border-t border-(--border)">
+    <section id="projetos" class="py-25 px-6 border-t border-[#1c2333]">
       <div class="max-w-275 mx-auto">
         <div
-          class="reveal flex items-end justify-between mb-12 flex-wrap gap-3"
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 flex items-end justify-between mb-12 flex-wrap gap-3"
         >
           <div>
             <p
-              class="font-mono text-xs text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
+              class="font-mono text-xs text-primary-light tracking-[0.08em] uppercase mb-2.5"
             >
               // projetos
             </p>
@@ -539,20 +644,21 @@
           <a
             href="https://github.com/gab-braga"
             target="_blank"
-            class="text-[0.85rem] font-medium text-(--muted) hover:text-(--violet-l) whitespace-nowrap transition-colors"
+            class="text-[0.85rem] font-medium text-[#6b7280] hover:text-primary-light whitespace-nowrap transition-colors"
             >Ver todos no GitHub →</a
           >
         </div>
 
         <div
-          class="reveal grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-5"
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-5"
         >
           <!-- projeto 1 -->
           <div
-            class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl bg-[#0f1420] overflow-hidden flex flex-col"
           >
             <div
-              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/redecon.jpg)] flex items-center justify-center border-b border-(--border)"
+              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/redecon.jpg)] flex items-center justify-center border-b border-[#1c2333]"
             ></div>
             <div class="p-6 flex-1 flex flex-col">
               <div class="flex items-center gap-2 mb-2.5">
@@ -560,30 +666,39 @@
                   Instituto RedeCon
                 </h3>
                 <span
-                  class="pill text-[0.68rem] border border-[rgba(221,0,49,0.3)] text-[#fda4af]"
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
                   >React.js</span
                 >
               </div>
-              <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
+              <p class="text-[0.83rem] text-[#6b7280] leading-[1.65] flex-1">
                 A plataforma permite o controle de matrículas de alunos,
                 disponibilização de materiais de estudo, gerenciamento de
                 questões e atividades, além do acompanhamento do desempenho
                 acadêmico.
               </p>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <span class="pill text-xs">Shadcn UI</span>
-                <span class="pill text-xs">Prisma ORM</span>
-                <span class="pill text-xs">Mercado Pago API</span>
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >Shadcn UI</span
+                >
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >Prisma ORM</span
+                >
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >Mercado Pago API</span
+                >
               </div>
               <!-- <div class="mt-4 flex gap-3">
                 <a
                   href="#"
-                  class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
+                  class="text-[0.82rem] text-primary-light font-medium transition-opacity hover:opacity-[0.7]"
                   >GitHub ↗</a
                 >
                 <a
                   href="#"
-                  class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
+                  class="text-[0.82rem] text-[#6b7280] hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
               </div> -->
@@ -592,10 +707,10 @@
 
           <!-- projeto 2 -->
           <div
-            class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl bg-[#0f1420] overflow-hidden flex flex-col"
           >
             <div
-              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/coprof.jpg)] flex items-center justify-center border-b border-(--border)"
+              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/coprof.jpg)] flex items-center justify-center border-b border-[#1c2333]"
             ></div>
             <div class="p-6 flex-1 flex flex-col">
               <div class="flex items-center gap-2 mb-2.5">
@@ -603,11 +718,11 @@
                   CoProf
                 </h3>
                 <span
-                  class="pill text-[0.68rem] border border-[rgba(96,165,250,0.3)] text-[#93c5fd]"
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
                   >Next.js</span
                 >
               </div>
-              <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
+              <p class="text-[0.83rem] text-[#6b7280] leading-[1.65] flex-1">
                 Plataforma web desenvolvida para auxiliar professores no
                 registro e organização de aulas. A aplicação permite gravar
                 áudios, gerar transcrições automáticas e utilizar inteligência
@@ -615,19 +730,28 @@
                 principais tópicos abordados.
               </p>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <span class="pill text-xs">MongoDB</span>
-                <span class="pill text-xs">OpenAI API</span>
-                <span class="pill text-xs">Google Classroom API</span>
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >MongoDB</span
+                >
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >OpenAI API</span
+                >
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >Google Classroom API</span
+                >
               </div>
               <!-- <div class="mt-4 flex gap-3">
                 <a
                   href="#"
-                  class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
+                  class="text-[0.82rem] text-primary-light font-medium transition-opacity hover:opacity-[0.7]"
                   >GitHub ↗</a
                 >
                 <a
                   href="#"
-                  class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
+                  class="text-[0.82rem] text-[#6b7280] hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
               </div> -->
@@ -636,10 +760,10 @@
 
           <!-- projeto 3 -->
           <div
-            class="card-hover rounded-2xl bg-(--card) overflow-hidden flex flex-col"
+            class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-2xl bg-[#0f1420] overflow-hidden flex flex-col"
           >
             <div
-              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/marriage.jpg)] flex items-center justify-center border-b border-(--border)"
+              class="h-50 bg-cover bg-center bg-[linear-gradient(to_bottom,#00000060,#00000010),url(/images/projects/marriage.jpg)] flex items-center justify-center border-b border-[#1c2333]"
             ></div>
             <div class="p-6 flex-1 flex flex-col">
               <div class="flex items-center gap-2 mb-2.5">
@@ -647,29 +771,35 @@
                   Wedding Site
                 </h3>
                 <span
-                  class="pill text-[0.68rem] border border-[rgba(124,58,237,0.3)] text-(--violet-l)"
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light"
                   >Next.js</span
                 >
               </div>
-              <p class="text-[0.83rem] text-(--muted) leading-[1.65] flex-1">
+              <p class="text-[0.83rem] text-[#6b7280] leading-[1.65] flex-1">
                 Plataforma digital personalizada do casal que reúne informações
                 do casamento em um único lugar, como história dos noivos,
                 detalhes da cerimônia e recepção, confirmação de presença, lista
                 de presentes, galeria de fotos e comunicados aos convidados.
               </p>
               <div class="mt-4 flex gap-2 flex-wrap">
-                <span class="pill text-xs">Firebase</span>
-                <span class="pill text-xs">Tailwind CSS</span>
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >Firebase</span
+                >
+                <span
+                  class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light text-xs"
+                  >Tailwind CSS</span
+                >
               </div>
               <!-- <div class="mt-4 flex gap-3">
                 <a
                   href="#"
-                  class="text-[0.82rem] text-(--violet-l) font-medium transition-opacity hover:opacity-[0.7]"
+                  class="text-[0.82rem] text-primary-light font-medium transition-opacity hover:opacity-[0.7]"
                   >GitHub ↗</a
                 >
                 <a
                   href="#"
-                  class="text-[0.82rem] text-(--muted) hover:text(-text) font-medium transition-colors"
+                  class="text-[0.82rem] text-[#6b7280] hover:text(-text) font-medium transition-colors"
                   >Demo ↗</a
                 >
               </div> -->
@@ -680,13 +810,16 @@
     </section>
 
     <!-- ══════════════ EXPERIÊNCIA ══════════════ -->
-    <section id="experiencia" class="py-25 px-6 border-t border-(--border)">
+    <section id="experiencia" class="py-25 px-6 border-t border-[#1c2333]">
       <div
         class="max-w-275 mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-start"
       >
-        <div class="reveal">
+        <div
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100"
+        >
           <p
-            class="font-mono text-[0.75rem] text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
+            class="font-mono text-[0.75rem] text-primary-light tracking-[0.08em] uppercase mb-2.5"
           >
             // trajetória
           </p>
@@ -697,20 +830,24 @@
           </h2>
 
           <div class="relative pl-6">
-            <div class="tl-line"></div>
+            <div
+              class="absolute inset-y-0 left-0 top-2 w-px bg-[#1c2333]"
+            ></div>
 
             <div class="relative mb-9">
-              <div class="tl-dot"></div>
-              <span class="font-mono text-[0.72rem] text-(--muted)"
+              <div
+                class="absolute -left-3 top-2.5 h-2.25 w-2.25 rounded-full border-2 border-[#080c10] bg-primary"
+              ></div>
+              <span class="font-mono text-[0.72rem] text-[#6b7280]"
                 >Jan/2026 - Presente</span
               >
               <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Software Engineer Jr.
               </h4>
-              <div class="text-[0.83rem] text-(--violet-l) mb-2">
+              <div class="text-[0.83rem] text-primary-light mb-2">
                 IVI Data Science · Remoto
               </div>
-              <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+              <p class="text-[0.83rem] text-[#6b7280] leading-[1.65]">
                 Desenvolvimento e evolução de uma plataforma de cursos online e
                 e-commerce, atuando na implementação de novas funcionalidades,
                 melhorias de experiência do usuário e integração de sistemas de
@@ -719,17 +856,19 @@
             </div>
 
             <div class="relative mb-9">
-              <div class="tl-dot"></div>
-              <span class="font-mono text-[0.72rem] text-(--muted)"
+              <div
+                class="absolute -left-3 top-2.5 h-2.25 w-2.25 rounded-full border-2 border-[#080c10] bg-primary"
+              ></div>
+              <span class="font-mono text-[0.72rem] text-[#6b7280]"
                 >Nov/2025 - Feb/2026</span
               >
               <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Software Engineer Jr.
               </h4>
-              <div class="text-[0.83rem] text-(--violet-l) mb-2">
+              <div class="text-[0.83rem] text-primary-light mb-2">
                 SoulCode Academy · Remoto
               </div>
-              <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+              <p class="text-[0.83rem] text-[#6b7280] leading-[1.65]">
                 Desenvolvimento de sites e sistemas para diferentes clientes,
                 com atuação em JavaScript moderno, React e desenvolvimento
                 frontend.
@@ -737,17 +876,19 @@
             </div>
 
             <div class="relative">
-              <div class="tl-dot"></div>
-              <span class="font-mono text-[0.72rem] text-(--muted)"
+              <div
+                class="absolute -left-3 top-2.5 h-2.25 w-2.25 rounded-full border-2 border-[#080c10] bg-primary"
+              ></div>
+              <span class="font-mono text-[0.72rem] text-[#6b7280]"
                 >Jun/2022 - Nov/2025</span
               >
               <h4 class="font-display font-semibold text-base my-1.5 mb-1">
                 Programming Teacher
               </h4>
-              <div class="text-[0.83rem] text-(--violet-l) mb-2">
+              <div class="text-[0.83rem] text-primary-light mb-2">
                 SoulCode Academy · Remoto
               </div>
-              <p class="text-[0.83rem] text-(--muted) leading-[1.65]">
+              <p class="text-[0.83rem] text-[#6b7280] leading-[1.65]">
                 Atuação como professor e mentor em desenvolvimento de software,
                 ministrando aulas de programação, orientando projetos e
                 acompanhando a evolução dos alunos.
@@ -756,9 +897,12 @@
           </div>
         </div>
 
-        <div class="reveal">
+        <div
+          data-reveal
+          class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100"
+        >
           <p
-            class="font-mono text-[0.75rem] text-(--violet-l) tracking-[0.08em] uppercase mb-2.5"
+            class="font-mono text-[0.75rem] text-primary-light tracking-[0.08em] uppercase mb-2.5"
           >
             // formação
           </p>
@@ -769,53 +913,61 @@
           </h2>
 
           <div class="flex flex-col gap-4">
-            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+            <div
+              class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-[14px] p-5.5 bg-[#0f1420]"
+            >
               <div class="flex justify-between items-start mb-2">
                 <h4 class="font-display font-semibold text-[0.95rem]">
                   Ciência da Computação
                 </h4>
-                <span class="font-mono text-[0.7rem] text-(--muted)"
+                <span class="font-mono text-[0.7rem] text-[#6b7280]"
                   >2020-2025</span
                 >
               </div>
-              <div class="text-[0.83rem] text-(--violet-l)">
+              <div class="text-[0.83rem] text-primary-light">
                 Instituto Federal · Tianguá, CE
               </div>
             </div>
 
-            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+            <div
+              class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-[14px] p-5.5 bg-[#0f1420]"
+            >
               <div class="flex justify-between items-start mb-2">
                 <h4 class="font-display font-semibold text-[0.95rem]">
                   Microsoft Certified: Azure AI Fundamentals
                 </h4>
-                <span class="font-mono text-[0.7rem] text-(--muted)">2024</span>
+                <span class="font-mono text-[0.7rem] text-[#6b7280]">2024</span>
               </div>
-              <div class="text-[0.83rem] text-(--violet-l)">
+              <div class="text-[0.83rem] text-primary-light">
                 Microsoft Azure
               </div>
             </div>
 
-            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+            <div
+              class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-[14px] p-5.5 bg-[#0f1420]"
+            >
               <div class="flex justify-between items-start mb-2">
                 <h4 class="font-display font-semibold text-[0.95rem]">
                   Microsoft Certified: Security, Compliance, and Identity
                   Fundamentals
                 </h4>
-                <span class="font-mono text-[0.7rem] text-(--muted)">2024</span>
+                <span class="font-mono text-[0.7rem] text-[#6b7280]">2024</span>
               </div>
-              <div class="text-[0.83rem] text-(--violet-l)">
+              <div class="text-[0.83rem] text-primary-light">
                 Microsoft Azure
               </div>
             </div>
 
-            <div class="card-hover rounded-[14px] p-5.5 bg-(--card)">
+            <div
+              class="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(124,58,237,0.15),0_8px_32px_rgba(124,58,237,0.08)] rounded-[14px] p-5.5 bg-[#0f1420]"
+            >
               <div class="flex justify-between items-start mb-2">
                 <h4 class="font-display font-semibold text-[0.95rem]">
                   React — The Complete Guide
                 </h4>
-                <span class="font-mono text-[0.7rem] text-(--muted)">2023</span>
+                <span class="font-mono text-[0.7rem] text-[#6b7280]">2023</span>
               </div>
-              <div class="text-[0.83rem] text-(--violet-l)">
+              <div class="text-[0.83rem] text-primary-light">
                 Origamid · Certificado
               </div>
             </div>
@@ -825,31 +977,37 @@
     </section>
 
     <!-- ══════════════ CONTATO ══════════════ -->
-    <section id="contato" class="py-25 px-6 border-t border-(--border)">
-      <div class="reveal max-w-160 mx-auto text-center">
+    <section id="contato" class="py-25 px-6 border-t border-[#1c2333]">
+      <div
+        data-reveal
+        class="translate-y-5 opacity-0 transition-[opacity,transform] duration-550 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 max-w-160 mx-auto text-center"
+      >
         <div
           class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[rgba(124,58,237,0.3)] bg-[rgba(124,58,237,0.08)] mb-5"
         >
           <div
-            class="w-1.75 h-1.75 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e] animate-[blink_2s_ease-in-out_infinite]"
+            class="w-1.75 h-1.75 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e] animate-[blink_2s_ease-in-out_infinite] motion-reduce:animate-none"
           ></div>
-          <span class="font-mono text-[0.75rem] text-(--violet-l)"
+          <span class="font-mono text-[0.75rem] text-primary-light"
             >disponível para novos projetos</span
           >
         </div>
         <h2
           class="font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.04em] leading-[1.15] mb-4.5"
         >
-          Vamos construir algo<br /><span class="grad">juntos</span>?
+          Vamos construir algo<br /><span
+            class="bg-linear-to-br from-primary-light to-blue-400 bg-clip-text text-transparent"
+            >juntos</span
+          >?
         </h2>
-        <p class="text-[1.05rem] text-(--muted) leading-[1.75] mb-10">
+        <p class="text-[1.05rem] text-[#6b7280] leading-[1.75] mb-10">
           Seja para trocar ideias, colaborar em um projeto open source ou
           explorar oportunidades — minha caixa de entrada está aberta.
         </p>
         <div class="flex gap-3 justify-center flex-wrap max-w-md mx-auto">
           <a
             href="mailto:gabrielbraga.me@gmail.com"
-            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-(--violet) hover:bg-[#6D28D9] text-white font-semibold text-[0.95rem] transition-colors"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-primary hover:bg-primary-dark text-white font-semibold text-[0.95rem] transition-colors"
           >
             <svg
               width="18"
@@ -881,9 +1039,9 @@
             Falar no WhatsApp
           </a>
           <a
-            href="https://linkedin.com/in/f-gabriel-braga"
+            href="www.linkedin.com/in/gab-braga"
             target="_blank"
-            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-[0.95rem] transition-colors"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-[#1c2333] hover:border-[rgba(124,58,237,0.5)] text-[#e2e8f0] font-medium text-[0.95rem] transition-colors"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -895,7 +1053,7 @@
           <a
             href="https://github.com/gab-braga"
             target="_blank"
-            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-(--border) hover:border-[rgba(124,58,237,0.5)] text-(--text) font-medium text-[0.95rem] transition-colors"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-[#1c2333] hover:border-[rgba(124,58,237,0.5)] text-[#e2e8f0] font-medium text-[0.95rem] transition-colors"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -909,8 +1067,8 @@
     </section>
 
     <!-- ══════════════ FOOTER ══════════════ -->
-    <footer class="border-t border-(--border) py-7 px-6 text-center">
-      <p class="font-mono" style="font-size: 0.75rem; color: var(--muted)">
+    <footer class="border-t border-[#1c2333] py-7 px-6 text-center">
+      <p class="font-mono text-xs text-[#6b7280]">
         Next.js • Node.js • Spring Boot • Angular • MySQL • MongoDB • Strapi •
         Microsoft Azure • Google Cloud • Firebase •
         <span class="year"></span>

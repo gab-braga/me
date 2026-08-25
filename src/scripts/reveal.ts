@@ -3,7 +3,7 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
       if (e.isIntersecting) {
-        e.target.classList.add("visible");
+        e.target.classList.remove("opacity-0", "translate-y-5");
         observer.unobserve(e.target);
       }
     });
@@ -11,5 +11,5 @@ const observer = new IntersectionObserver(
   { threshold: 0.1 },
 );
 
-const revealed = document.querySelectorAll(".reveal");
+const revealed = document.querySelectorAll("[data-reveal]");
 revealed.forEach((el) => observer.observe(el));

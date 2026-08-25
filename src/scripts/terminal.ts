@@ -28,7 +28,8 @@ let charIndex = 0;
 function typeLine() {
   if (lineIndex >= lines.length) {
     const cursor = document.createElement("span");
-    cursor.className = "cursor";
+    cursor.className =
+      "ml-px inline-block h-[1.1em] w-0.5 animate-blink bg-primary-light align-middle motion-reduce:animate-none";
     output?.appendChild(cursor);
     return;
   }
