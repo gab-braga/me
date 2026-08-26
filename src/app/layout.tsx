@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { inter, jetBrainsMono, spaceGrotesk } from "@/lib/font";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import "./globals.css";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Dev · Engenheiro de Software",
+  title: "Gabriel Braga · Engenheiro de Software",
   description: "",
 };
 

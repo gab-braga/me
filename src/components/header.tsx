@@ -6,7 +6,7 @@ export function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    if (!window) return;
+    if (typeof window === "undefined") return;
     const handleScroll = () => setHasScrolled(window.scrollY > 40);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
