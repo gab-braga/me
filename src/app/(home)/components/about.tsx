@@ -1,6 +1,35 @@
 "use client";
 
+import { Tag } from "@/components/tag";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+
+const professionalStats = [
+  {
+    label: "+8",
+    description:
+      "anos de experiência transformando ideias em soluções digitais",
+  },
+  {
+    label: "+30",
+    description: "projetos desenvolvidos e entregues com sucesso.",
+  },
+  {
+    label: "+20",
+    description: "tecnologias utilizadas em diferentes projetos.",
+  },
+  {
+    label: "100%",
+    description: "compromisso com a qualidade e os resultados de cada projeto.",
+  },
+];
+
+const expertiseTags = [
+  "#clean-code",
+  "#performance",
+  "#a11y",
+  "#design-systems",
+  "#tdd",
+];
 
 export function About() {
   const { elementRef, isVisible } = useScrollReveal<HTMLDivElement>();
@@ -14,45 +43,20 @@ export function About() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
           }`}
         >
-          <div className="w-full max-w-110 sm:max-w-none md:max-w-90 flex flex-col sm:flex-row md:flex-col gap-4 max-sm:mx-auto">
-            <div className="aspect-square w-full sm:max-w-80 md:max-w-90 rounded-2xl bg-[#0f1420] border border-[#1c2333] overflow-hidden relative flex items-center justify-center">
-              <div className="absolute inset-0 bg-cover bg-[linear-gradient(135deg,#3b82f640_0%,#60a5fa40_100%),url(/images/profile.jpg)]"></div>
-            </div>
-
-            <div className="w-full grid grid-cols-2 gap-3">
-              <div className="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_8px_32px_rgba(59,130,246,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center">
+          <div className="w-full grid grid-cols-1 gap-5">
+            {professionalStats.map(({ label, description }) => (
+              <div
+                key={label}
+                className="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_8px_32px_rgba(59,130,246,0.08)] rounded-xl p-4 bg-[#0f1420] flex items-center gap-4"
+              >
                 <div className="font-heading bg-linear-to-br from-primary-light to-cyan-400 bg-clip-text text-transparent text-[1.8rem] font-bold">
-                  +6
+                  {label}
                 </div>
                 <div className="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
-                  anos de experiência
+                  {description}
                 </div>
               </div>
-              <div className="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_8px_32px_rgba(59,130,246,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center">
-                <div className="font-heading bg-linear-to-br from-primary-light to-cyan-400 bg-clip-text text-transparent text-[1.8rem] font-bold">
-                  +30
-                </div>
-                <div className="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
-                  projetos concluídos
-                </div>
-              </div>
-              <div className="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_8px_32px_rgba(59,130,246,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center">
-                <div className="font-heading bg-linear-to-br from-primary-light to-cyan-400 bg-clip-text text-transparent text-[1.8rem] font-bold">
-                  +10
-                </div>
-                <div className="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
-                  stacks utilizadas
-                </div>
-              </div>
-              <div className="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_8px_32px_rgba(59,130,246,0.08)] rounded-xl p-4 bg-[#0f1420] flex flex-col items-center justify-center">
-                <div className="font-heading bg-linear-to-br from-primary-light to-cyan-400 bg-clip-text text-transparent text-[1.8rem] font-bold">
-                  100%
-                </div>
-                <div className="text-[0.78rem] text-[#6b7280] text-center mt-0.5">
-                  compromisso
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div>
@@ -64,6 +68,7 @@ export function About() {
               <br />
               Interfaces que
               <span className="bg-linear-to-br from-primary-light to-cyan-400 bg-clip-text text-transparent">
+                {" "}
                 funcionam
               </span>
               .
@@ -80,21 +85,9 @@ export function About() {
               que o próximo dev vai agradecer em ler.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light">
-                #clean-code
-              </span>
-              <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light">
-                #performance
-              </span>
-              <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light">
-                #a11y
-              </span>
-              <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light">
-                #design-systems
-              </span>
-              <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[#1c2333] bg-[#0f1420] px-3 py-1.25 font-mono text-[0.78rem] text-[#e2e8f0] transition-[border-color,color] duration-200 hover:border-primary/60 hover:text-primary-light">
-                #tdd
-              </span>
+              {expertiseTags.map((tag) => (
+                <Tag key={tag}>{tag}</Tag>
+              ))}
             </div>
           </div>
         </div>
