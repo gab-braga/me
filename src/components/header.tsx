@@ -6,10 +6,8 @@ export function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    function handleScroll() {
-      setHasScrolled(window.scrollY > 40);
-    }
-
+    if (!window) return;
+    const handleScroll = () => setHasScrolled(window.scrollY > 40);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
