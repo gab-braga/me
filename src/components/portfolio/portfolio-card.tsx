@@ -21,7 +21,7 @@ export function PortfolioCard({
       className="border border-[#1c2333] transition-[border-color,box-shadow] duration-250 hover:border-primary/50 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_8px_32px_rgba(59,130,246,0.08)] rounded-2xl bg-[#0f1420] overflow-hidden flex flex-col"
     >
       <div
-        className="h-50 bg-cover bg-center flex items-center justify-center border-b border-[#1c2333]"
+        className="h-50 bg-cover bg-top flex items-center justify-center border-b border-[#1c2333]"
         style={{ backgroundImage: `url(${cover})` }}
       />
       <div className="p-6 flex-1 flex flex-col">

@@ -7,7 +7,7 @@ const portfolio = [
   {
     cover: "/images/projects/redecon.jpg",
     title: "Instituto RedeCon",
-    category: "React.js",
+    category: "Educação",
     description:
       "A plataforma permite o controle de matrículas de alunos, disponibilização de materiais de estudo, gerenciamento de questões e atividades, além do acompanhamento do desempenho acadêmico.",
     tags: ["Shadcn UI", "Prisma ORM", "Mercado Pago API"],
@@ -15,18 +15,42 @@ const portfolio = [
   {
     cover: "/images/projects/coprof.jpg",
     title: "CoProf",
-    category: "Next.js",
+    category: "Inteligência Artificial",
     description:
-      "Plataforma web desenvolvida para auxiliar professores no registro e organização de aulas. A aplicação permite gravar áudios, gerar transcrições automáticas e utilizar inteligência artificial para criar resumos inteligentes, destacando os principais tópicos abordados.",
-    tags: ["MongoDB", "OpenAI API", "Google Classroom API"],
+      "Plataforma web desenvolvida para auxiliar professores no registro e organização de aulas. A aplicação permite gravar áudios, gerar transcrições automáticas e utilizar inteligência artificial para criar resumos inteligentes.",
+    tags: ["OpenAI API", "Google Classroom API"],
   },
   {
     cover: "/images/projects/wedding.jpg",
     title: "Wedding Site",
-    category: "Next.js",
+    category: "Casamentos",
     description:
-      "Plataforma digital personalizada do casal que reúne informações do casamento em um único lugar, como história dos noivos, detalhes da cerimônia e recepção, confirmação de presença, lista de presentes, galeria de fotos e comunicados aos convidados.",
+      "Plataforma digital personalizada do casal que reúne informações do casamento em um único lugar, com detalhes da cerimônia, confirmação de presença, galeria de fotos e comunicados aos convidados.",
     tags: ["Firebase", "Tailwind CSS"],
+  },
+  {
+    cover: "/images/projects/detetive-sql.png",
+    title: "Detetive SQL",
+    category: "Jogos",
+    description:
+      "Jogo educativo em que o jogador utiliza consultas SQL para investigar pistas, analisar dados e solucionar um crime.",
+    tags: ["React.js", "SQLite", "Firebase"],
+  },
+  {
+    cover: "/images/projects/terragro.png",
+    title: "Terragro",
+    category: "Divulgação",
+    description:
+      "Site institucional voltado à divulgação de informações agrícolas e à apresentação de produtos e soluções para o campo.",
+    tags: ["Bootstrap", "React.js"],
+  },
+  {
+    cover: "/images/projects/controleasy.png",
+    title: "Controleasy",
+    category: "Gestão",
+    description:
+      "Plataforma para simplificar a gestão de convênios, propostas, licitações e recursos financeiros, oferecendo mais controle aos processos administrativos.",
+    tags: ["Shadcn UI", "React.js", "Auth"],
   },
 ];
 
