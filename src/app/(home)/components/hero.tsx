@@ -26,9 +26,10 @@ export function Hero() {
           </h1>
 
           <p className="text-[1.05rem] leading-[1.7] max-w-100 mb-9 text-[#6b7280]">
-            Transformo requisitos complexos em interfaces que as pessoas adoram
-            usar. Foco em React, Angular e TypeScript — com um olho sempre no
-            detalhe e outro na performance.
+            Transformo desafios complexos em soluções de software eficientes,
+            intuitivas e escaláveis. Trabalho em todas as etapas do
+            desenvolvimento, da arquitetura à experiência do usuário, sempre com
+            atenção à qualidade, aos detalhes e à performance.
           </p>
 
           <div className="flex gap-3 flex-wrap">

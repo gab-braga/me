@@ -74,10 +74,10 @@ export function About() {
               .
             </h2>
             <p className="text-[#6b7280] leading-[1.75] mb-4">
-              Sou engenheiro de software especializado em Frontend, com foco em
-              criar experiências digitais rápidas, acessíveis e bem
-              estruturadas. Trabalho com React/Next.js e Node.js no dia a dia,
-              sempre com TypeScript como base.
+              Sou engenheiro de software com experiência no desenvolvimento de
+              soluções completas, do backend à interface. Trabalho com React.js,
+              Next.js, Node.js (TypeScript) e Java na criação de aplicações
+              eficientes, escaláveis e bem estruturadas.
             </p>
             <p className="text-[#6b7280] leading-[1.75] mb-7">
               Me importo com os detalhes que a maioria ignora: performance de

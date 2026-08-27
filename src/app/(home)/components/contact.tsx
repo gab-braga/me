@@ -32,8 +32,10 @@ export function Contact() {
           ?
         </h2>
         <p className="text-[1.05rem] text-[#6b7280] leading-[1.75] mb-10">
-          Seja para trocar ideias, colaborar em um projeto open source ou
-          explorar oportunidades — minha caixa de entrada está aberta.
+          <span className="max-w-[40ch] inline-block">
+            Seja para trocar ideias ou explorar oportunidades, minha caixa de
+            entrada está aberta.
+          </span>
         </p>
         <div className="flex gap-3 justify-center flex-wrap max-w-md mx-auto">
           <a

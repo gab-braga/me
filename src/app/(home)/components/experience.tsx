@@ -15,14 +15,14 @@ const professionalExperience = [
     role: "Software Engineer",
     company: "SoulCode Academy · Remoto",
     description:
-      "Desenvolvimento de sites e sistemas para diferentes clientes, com atuação em TypeScript moderno, Next.js e desenvolvimento frontend.",
+      "Desenvolvimento de sites e sistemas para diferentes clientes, com atuação em TypeScript moderno, Next.js e desenvolvimento backend.",
   },
   {
     period: "Jun/2022 - Nov/2025",
     role: "Programming Teacher",
     company: "SoulCode Academy · Remoto",
     description:
-      "Ensino de programação e desenvolvimento fullstack, com foco em Java, JavaScript, React e aplicação prática dos conceitos em projetos.",
+      "Ensino de programação e desenvolvimento fullstack, com foco em Java, JavaScript, React, Angular e aplicação prática dos conceitos em projetos.",
   },
 ];
 
