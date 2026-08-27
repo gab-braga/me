@@ -11,6 +11,7 @@ const portfolio = [
     description:
       "A plataforma permite o controle de matrículas de alunos, disponibilização de materiais de estudo, gerenciamento de questões e atividades, além do acompanhamento do desempenho acadêmico.",
     tags: ["Prisma ORM", "Mercado Pago API"],
+    demo: "http://redecon.weeeb.com.br",
   },
   {
     cover: "/images/projects/coprof.png",
@@ -19,6 +20,7 @@ const portfolio = [
     description:
       "Plataforma web desenvolvida para auxiliar professores no registro e organização de aulas. A aplicação permite gravar áudios, gerar transcrições automáticas e utilizar inteligência artificial para criar resumos inteligentes.",
     tags: ["OpenAI API", "Google Classroom API"],
+    demo: "https://coprof.weeeb.com.br",
   },
   {
     cover: "/images/projects/wedding.jpg",
@@ -27,6 +29,7 @@ const portfolio = [
     description:
       "Plataforma digital personalizada do casal que reúne informações do casamento em um único lugar, com detalhes da cerimônia, confirmação de presença, galeria de fotos e comunicados aos convidados.",
     tags: ["Firebase", "Tailwind CSS"],
+    demo: "https://celebrar-casamento.web.app",
   },
   {
     cover: "/images/projects/detetive-sql.png",
@@ -35,6 +38,7 @@ const portfolio = [
     description:
       "Jogo educativo em que o jogador utiliza consultas SQL para investigar pistas, analisar dados e solucionar um crime.",
     tags: ["React.js", "SQLite", "Firebase"],
+    demo: "https://sql-detective.web.app",
   },
   {
     cover: "/images/projects/terragro.png",
@@ -43,6 +47,7 @@ const portfolio = [
     description:
       "Site institucional voltado à divulgação de informações agrícolas e à apresentação de produtos e soluções para o campo.",
     tags: ["Bootstrap", "React.js"],
+    demo: "https://gab-braga.github.io/terragro",
   },
   {
     cover: "/images/projects/controleasy.png",
@@ -51,6 +56,7 @@ const portfolio = [
     description:
       "Plataforma para simplificar a gestão de convênios, propostas, licitações e recursos financeiros, oferecendo mais controle aos processos administrativos.",
     tags: ["Shadcn UI", "React.js", "Auth"],
+    demo: "",
   },
 ];
 

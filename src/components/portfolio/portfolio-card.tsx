@@ -1,4 +1,5 @@
 import { Tag } from "@/components/tag";
+import { ArrowUpRight } from "lucide-react";
 
 type Props = {
   title: string;
@@ -6,6 +7,7 @@ type Props = {
   category: string;
   description: string;
   tags: string[];
+  demo?: string;
 };
 
 export function PortfolioCard({
@@ -14,6 +16,7 @@ export function PortfolioCard({
   category,
   description,
   tags,
+  demo,
 }: Props) {
   return (
     <div
@@ -39,18 +42,24 @@ export function PortfolioCard({
             <Tag key={tag}>{tag}</Tag>
           ))}
         </div>
-        {/* <div className="mt-4 flex gap-3">
-                <a
-                  href="#"
-                  className="text-[0.82rem] text-primary-light font-medium transition-opacity hover:opacity-[0.7]"
-                  >GitHub ↗</a
-                >
-                <a
-                  href="#"
-                  className="text-[0.82rem] text-[#6b7280] hover:text(-text) font-medium transition-colors"
-                  >Demo ↗</a
-                >
-              </div> */}
+        <div className="mt-4 flex justify-end gap-3">
+          {/* 
+            <a
+              href="#"
+              className="text-[0.82rem] text-primary-light font-medium transition-opacity hover:opacity-[0.7]"
+              >GitHub ↗</a>
+          */}
+          {!!demo && (
+            <a
+              href={demo}
+              target="_blank"
+              className="inline-flex items-center gap-1.5 rounded-md border border-[#1c2333] px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-primary hover:border-primary"
+            >
+              Demo
+              <ArrowUpRight className="size-3" aria-hidden="true" />
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
