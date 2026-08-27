@@ -10,10 +10,10 @@ const portfolio = [
     category: "Educação",
     description:
       "A plataforma permite o controle de matrículas de alunos, disponibilização de materiais de estudo, gerenciamento de questões e atividades, além do acompanhamento do desempenho acadêmico.",
-    tags: ["Shadcn UI", "Prisma ORM", "Mercado Pago API"],
+    tags: ["Prisma ORM", "Mercado Pago API"],
   },
   {
-    cover: "/images/projects/coprof.jpg",
+    cover: "/images/projects/coprof.png",
     title: "CoProf",
     category: "Inteligência Artificial",
     description:
